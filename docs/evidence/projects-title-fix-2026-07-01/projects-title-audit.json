@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-07-01T20:38:57.273Z",
+  "url": "http://127.0.0.1:5173/",
+  "audit": [
+    {
+      "estimatedLines": 2,
+      "fontSize": "26.4px",
+      "letterSpacing": "-1.056px",
+      "lineHeight": "25.344px",
+      "maxWidth": "860px",
+      "realHorizontalOverflow": false,
+      "rect": {
+        "height": 51,
+        "left": 230,
+        "top": 552,
+        "width": 507
+      },
+      "text": "Practical projects, built while learning real infrastructure work.",
+      "textAlign": "start",
+      "width": 768
+    },
+    {
+      "estimatedLines": 1,
+      "fontSize": "27.136px",
+      "letterSpacing": "-1.08544px",
+      "lineHeight": "26.0506px",
+      "maxWidth": "860px",
+      "realHorizontalOverflow": false,
+      "rect": {
+        "height": 26,
+        "left": 298,
+        "top": 611,
+        "width": 695
+      },
+      "text": "Practical projects, built while learning real infrastructure work.",
+      "textAlign": "start",
+      "width": 1024
+    },
+    {
+      "estimatedLines": 2,
+      "fontSize": "38.16px",
+      "letterSpacing": "-1.5264px",
+      "lineHeight": "36.6336px",
+      "maxWidth": "860px",
+      "realHorizontalOverflow": false,
+      "rect": {
+        "height": 73,
+        "left": 458,
+        "top": 646,
+        "width": 844
+      },
+      "text": "Practical projects, built while learning real infrastructure work.",
+      "textAlign": "start",
+      "width": 1440
+    }
+  ],
+  "console": []
+}

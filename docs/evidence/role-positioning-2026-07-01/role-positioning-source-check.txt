@@ -1,0 +1,39 @@
+Role positioning source/build check
+Date: 2026-07-01T23:29:44+02:00
+Repo: C:\Project Toby\tobypelfrene
+
+Scope:
+- Text-only update for the roles and IT directions Toby is open to.
+- No layout, color, spacing, grid or component-structure changes were made.
+- No dependency install, commit, push, branch, deploy or Git remote change was performed.
+
+Files changed in this slice:
+- C:\Project Toby\tobypelfrene\src\App.tsx
+- C:\Project Toby\tobypelfrene\src\portfolioData.ts
+- C:\Project Toby\tobypelfrene\index.html
+- C:\Project Toby\tobypelfrene\public\Toby-Pelfrene-CV.html
+- C:\Project Toby\tobypelfrene\README.md
+- C:\Project Toby\tobypelfrene\STATUS.md
+- C:\Project Toby\tobypelfrene\PROJECT_STATE.yaml
+- C:\Project Toby\tobypelfrene\PROJECT_DNA.yaml
+- C:\Project Toby\tobypelfrene\WORKLOG.md
+- C:\Project Toby\tobypelfrene\docs\EVIDENCE_LOG.md
+- C:\Project Toby\tobypelfrene\docs\evidence\role-positioning-2026-07-01\role-positioning-source-check.txt
+
+Verification:
+- Source search found no Data Analyst, Data Scientist, Data Engineer or Database Administrator wording.
+- Source search found no remaining Open to junior IT opportunities wording.
+- JSON-LD in index.html was checked with JSON.parse.
+- npm.cmd run build completed successfully.
+- python scripts\check_state_docs.py completed successfully with UTF-8 output enabled for the current shell process.
+
+Positioning terms used:
+- Network Administration
+- Systems Administration
+- Server Administration
+- IT Infrastructure
+- Virtualization
+- Storage
+- Backup and Recovery
+- Data Management
+- IT Support

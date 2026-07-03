@@ -1,0 +1,63 @@
+{
+  "pageInfo": {
+    "height": 7640,
+    "maxScroll": 6740,
+    "viewport": 900
+  },
+  "segments": [
+    {
+      "index": 0,
+      "requestedY": 0,
+      "actualY": 0,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-00.png"
+    },
+    {
+      "index": 1,
+      "requestedY": 900,
+      "actualY": 900,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-01.png"
+    },
+    {
+      "index": 2,
+      "requestedY": 1800,
+      "actualY": 1800,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-02.png"
+    },
+    {
+      "index": 3,
+      "requestedY": 2700,
+      "actualY": 2700,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-03.png"
+    },
+    {
+      "index": 4,
+      "requestedY": 3600,
+      "actualY": 3600,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-04.png"
+    },
+    {
+      "index": 5,
+      "requestedY": 4500,
+      "actualY": 4500,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-05.png"
+    },
+    {
+      "index": 6,
+      "requestedY": 5400,
+      "actualY": 5400,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-06.png"
+    },
+    {
+      "index": 7,
+      "requestedY": 6300,
+      "actualY": 6300,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-07.png"
+    },
+    {
+      "index": 8,
+      "requestedY": 6740,
+      "actualY": 6740,
+      "file": "C:/Project Toby/tobypelfrene/docs/evidence/editorial-refresh-2026-07-01/desktop-segment-08.png"
+    }
+  ]
+}

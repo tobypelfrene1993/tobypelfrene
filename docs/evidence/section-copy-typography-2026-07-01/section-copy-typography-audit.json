@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-07-01T20:51:24.590Z",
+  "url": "http://127.0.0.1:5173/#how-i-work",
+  "audit": [
+    {
+      "oldCopyStillVisible": [],
+      "principleTexts": [
+        "I test configurations in small steps so I can see what works and what breaks.",
+        "I write down setup steps, changes and notes so I can understand the system later.",
+        "I isolate the problem, check the basics and change one thing at a time."
+      ],
+      "principleTitles": [
+        "Build and test",
+        "Document changes",
+        "Troubleshoot step by step"
+      ],
+      "realHorizontalOverflow": false,
+      "sectionData": [
+        {
+          "fontSize": "32px",
+          "gridTemplateColumns": "319px",
+          "heading": "I learn by building and fixing real systems.",
+          "headingRect": {
+            "height": 128,
+            "left": 28,
+            "width": 207
+          },
+          "id": "about",
+          "lineHeight": "32px"
+        },
+        {
+          "fontSize": "32px",
+          "gridTemplateColumns": "351px",
+          "heading": "What I use in my projects and labs.",
+          "headingRect": {
+            "height": 96,
+            "left": 12,
+            "width": 207
+          },
+          "id": "skills",
+          "lineHeight": "32px"
+        },
+        {
+          "fontSize": "32px",
+          "gridTemplateColumns": "351px",
+          "heading": "How I approach technical work.",
+          "headingRect": {
+            "height": 64,
+            "left": 12,
+            "width": 207
+          },
+          "id": "how-i-work",
+          "lineHeight": "32px"
+        }
+      ],
+      "width": 390
+    },
+    {
+      "oldCopyStillVisible": [],
+      "principleTexts": [
+        "I test configurations in small steps so I can see what works and what breaks.",
+        "I write down setup steps, changes and notes so I can understand the system later.",
+        "I isolate the problem, check the basics and change one thing at a time."
+      ],
+      "principleTitles": [
+        "Build and test",
+        "Document changes",
+        "Troubleshoot step by step"
+      ],
+      "realHorizontalOverflow": false,
+      "sectionData": [
+        {
+          "fontSize": "33.792px",
+          "gridTemplateColumns": "300px 367.25px",
+          "heading": "I learn by building and fixing real systems.",
+          "headingRect": {
+            "height": 135,
+            "left": 16,
+            "width": 219
+          },
+          "id": "about",
+          "lineHeight": "33.792px"
+        },
+        {
+          "fontSize": "33.792px",
+          "gridTemplateColumns": "300px 367.25px",
+          "heading": "What I use in my projects and labs.",
+          "headingRect": {
+            "height": 101,
+            "left": 16,
+            "width": 219
+          },
+          "id": "skills",
+          "lineHeight": "33.792px"
+        },
+        {
+          "fontSize": "33.792px",
+          "gridTemplateColumns": "300px 367.25px",
+          "heading": "How I approach technical work.",
+          "headingRect": {
+            "height": 68,
+            "left": 16,
+            "width": 219
+          },
+          "id": "how-i-work",
+          "lineHeight": "33.792px"
+        }
+      ],
+      "width": 768
+    },
+    {
+      "oldCopyStillVisible": [],
+      "principleTexts": [
+        "I test configurations in small steps so I can see what works and what breaks.",
+        "I write down setup steps, changes and notes so I can understand the system later.",
+        "I isolate the problem, check the basics and change one thing at a time."
+      ],
+      "principleTitles": [
+        "Build and test",
+        "Document changes",
+        "Troubleshoot step by step"
+      ],
+      "realHorizontalOverflow": false,
+      "sectionData": [
+        {
+          "fontSize": "63.36px",
+          "gridTemplateColumns": "433.594px 650.406px",
+          "heading": "I learn by building and fixing real systems.",
+          "headingRect": {
+            "height": 253,
+            "left": 123,
+            "width": 410
+          },
+          "id": "about",
+          "lineHeight": "63.36px"
+        },
+        {
+          "fontSize": "63.36px",
+          "gridTemplateColumns": "440px 660px",
+          "heading": "What I use in my projects and labs.",
+          "headingRect": {
+            "height": 190,
+            "left": 123,
+            "width": 410
+          },
+          "id": "skills",
+          "lineHeight": "63.36px"
+        },
+        {
+          "fontSize": "63.36px",
+          "gridTemplateColumns": "440px 660px",
+          "heading": "How I approach technical work.",
+          "headingRect": {
+            "height": 127,
+            "left": 123,
+            "width": 410
+          },
+          "id": "how-i-work",
+          "lineHeight": "63.36px"
+        }
+      ],
+      "width": 1440
+    }
+  ],
+  "console": []
+}

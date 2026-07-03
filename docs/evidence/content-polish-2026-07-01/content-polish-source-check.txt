@@ -1,0 +1,32 @@
+Content polish source/build check
+Date: 2026-07-01T23:22:52+02:00
+Repo: C:\Project Toby\tobypelfrene
+
+Scope:
+- Content polish only for recruiter scanability.
+- Updated visible copy in hero, project descriptions, About, Skills, How I Work and Contact.
+- Updated visible project technology ordering/count through existing project rendering.
+- No CSS file was edited for this slice.
+- No dependency install, commit, push, branch, deploy or Git remote change was performed.
+
+Files changed in this slice:
+- C:\Project Toby\tobypelfrene\src\App.tsx
+- C:\Project Toby\tobypelfrene\src\portfolioData.ts
+- C:\Project Toby\tobypelfrene\STATUS.md
+- C:\Project Toby\tobypelfrene\PROJECT_STATE.yaml
+- C:\Project Toby\tobypelfrene\WORKLOG.md
+- C:\Project Toby\tobypelfrene\docs\EVIDENCE_LOG.md
+- C:\Project Toby\tobypelfrene\docs\evidence\content-polish-2026-07-01\content-polish-source-check.txt
+
+Verification:
+- npm.cmd run build completed successfully.
+- Source contains the requested About heading: I learn by building and fixing real systems.
+- Source contains the requested Skills heading: What I use in my projects and labs.
+- Source contains the requested How I Work heading: How I approach technical work.
+- Source contains the requested How I Work principle titles and direct descriptions.
+- Source contains the requested direct Contact copy.
+- Source no longer uses the old hero pairing of "Network & Systems Administration student" with "Aspiring Network & Systems Administrator".
+- Project technology display uses the existing project list and renders up to five technologies.
+
+Search notes:
+- A source search for misspellings and banned certification/status wording found only the requested Education phrase "Network & Systems Administration Programme - In progress".

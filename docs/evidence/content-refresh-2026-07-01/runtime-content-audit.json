@@ -1,0 +1,151 @@
+{
+  "runtimeContentAudit": {
+    "contactMeHref": "#contact",
+    "contactTitle": "Open to junior IT opportunities",
+    "downloadHrefExists": [
+      "/Toby-Pelfrene-CV.html"
+    ],
+    "externalLinks": [
+      {
+        "href": "https://www.linkedin.com/in/toby-pelfrene-1a9365323/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "LinkedIn"
+      },
+      {
+        "href": "https://www.linkedin.com/in/toby-pelfrene-1a9365323/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "LinkedIn"
+      },
+      {
+        "href": "https://github.com/tobypelfrene1993/subnet-master-web",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "View on GitHub"
+      },
+      {
+        "href": "http://subnetmaster.tobypelfrene.be/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "Live Demo"
+      },
+      {
+        "href": "https://github.com/tobypelfrene1993/dell-fan-controller",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "View on GitHub"
+      },
+      {
+        "href": "https://www.linkedin.com/in/toby-pelfrene-1a9365323/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "LinkedInConnect"
+      },
+      {
+        "href": "https://github.com/tobypelfrene1993",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "GitHubView Work"
+      },
+      {
+        "href": "https://www.linkedin.com/in/toby-pelfrene-1a9365323/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "LinkedIn"
+      },
+      {
+        "href": "https://github.com/tobypelfrene1993",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "GitHub"
+      }
+    ],
+    "forbiddenTermsFound": [],
+    "h1": "Toby Pelfrene",
+    "heroSubtitle": "Aspiring Network & Systems Administrator",
+    "howIWorkTitle": "Structured learning, careful troubleshooting and documented changes",
+    "learningTitles": [
+      "Cisco CCNA — Planned",
+      "Microsoft AZ-900 — Planned",
+      "Microsoft MS-900 — Planned",
+      "Linux Essentials — Planned"
+    ],
+    "plannedBadgeCount": 4,
+    "projectStatuses": [
+      "Public project",
+      "Public repository",
+      "Personal infrastructure",
+      "Private repository",
+      "Personal automation work"
+    ],
+    "projectTitles": [
+      "Subnet Master",
+      "Dell Fan Controller",
+      "VPS Infrastructure",
+      "Infrastructure Automation Platform",
+      "Automation Systems"
+    ],
+    "skillGroups": [
+      "Networking",
+      "Systems",
+      "Infrastructure",
+      "Automation and Development"
+    ],
+    "title": "Toby Pelfrene | Aspiring Network & Systems Administrator",
+    "viewProjectsHref": "#projects"
+  },
+  "responsiveContentAudit": [
+    {
+      "name": "mobile",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\content-refresh-2026-07-01\\mobile.png",
+      "metrics": {
+        "contactFormFields": [
+          "name",
+          "email",
+          "message"
+        ],
+        "horizontalOverflow": false,
+        "innerWidth": 390,
+        "overflowingInteractiveLabels": [],
+        "projectCount": 5,
+        "scrollWidth": 375,
+        "skillGroupCount": 4
+      }
+    },
+    {
+      "name": "tablet",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\content-refresh-2026-07-01\\tablet.png",
+      "metrics": {
+        "contactFormFields": [
+          "name",
+          "email",
+          "message"
+        ],
+        "horizontalOverflow": false,
+        "innerWidth": 768,
+        "overflowingInteractiveLabels": [],
+        "projectCount": 5,
+        "scrollWidth": 753,
+        "skillGroupCount": 4
+      }
+    },
+    {
+      "name": "desktop",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\content-refresh-2026-07-01\\desktop.png",
+      "metrics": {
+        "contactFormFields": [
+          "name",
+          "email",
+          "message"
+        ],
+        "horizontalOverflow": false,
+        "innerWidth": 1440,
+        "overflowingInteractiveLabels": [],
+        "projectCount": 5,
+        "scrollWidth": 1425,
+        "skillGroupCount": 4
+      }
+    }
+  ]
+}

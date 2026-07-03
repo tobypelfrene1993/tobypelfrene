@@ -1,0 +1,89 @@
+﻿{
+    "url":  "http://127.0.0.1:5173/",
+    "build":  {
+                  "command":  "npm.cmd run build",
+                  "result":  "passed",
+                  "css":  "dist/assets/index-DaAX_L--.css",
+                  "js":  "dist/assets/index-DBmOv-_H.js"
+              },
+    "runtime":  {
+                    "port":  5173,
+                    "httpStatus":  200,
+                    "consoleWarningsOrErrors":  [
+
+                                                ],
+                    "sections":  [
+                                     "top",
+                                     "projects",
+                                     "about",
+                                     "skills",
+                                     "how-i-work",
+                                     "contact"
+                                 ],
+                    "projectRows":  5,
+                    "skillCategories":  4,
+                    "contactFormPresent":  false,
+                    "oldLabelsFound":  [
+
+                                       ]
+                },
+    "responsive":  [
+                       {
+                           "width":  320,
+                           "realHorizontalOverflow":  false,
+                           "projectRows":  5,
+                           "formPresent":  false,
+                           "oldLabelsFound":  [
+
+                                              ]
+                       },
+                       {
+                           "width":  390,
+                           "realHorizontalOverflow":  false,
+                           "projectRows":  5,
+                           "formPresent":  false,
+                           "oldLabelsFound":  [
+
+                                              ]
+                       },
+                       {
+                           "width":  768,
+                           "realHorizontalOverflow":  false,
+                           "projectRows":  5,
+                           "formPresent":  false,
+                           "oldLabelsFound":  [
+
+                                              ]
+                       },
+                       {
+                           "width":  1024,
+                           "realHorizontalOverflow":  false,
+                           "projectRows":  5,
+                           "formPresent":  false,
+                           "oldLabelsFound":  [
+
+                                              ]
+                       },
+                       {
+                           "width":  1440,
+                           "realHorizontalOverflow":  false,
+                           "projectRows":  5,
+                           "formPresent":  false,
+                           "oldLabelsFound":  [
+
+                                              ]
+                       }
+                   ],
+    "screenshots":  [
+                        "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\editorial-refresh-2026-07-01\\desktop-page-stitched.png",
+                        "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\editorial-refresh-2026-07-01\\hero.png",
+                        "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\editorial-refresh-2026-07-01\\project-row.png",
+                        "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\editorial-refresh-2026-07-01\\about.png",
+                        "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\editorial-refresh-2026-07-01\\mobile-page.png",
+                        "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\editorial-refresh-2026-07-01\\mobile-work.png"
+                    ],
+    "notes":  [
+                  "Browser fullPage screenshots repeated sticky/viewport content, so desktop full-page evidence was stitched from normal 1440x900 viewport screenshots at actual scroll positions.",
+                  "No dependencies, commits, pushes, branches or Git remote changes were performed."
+              ]
+}

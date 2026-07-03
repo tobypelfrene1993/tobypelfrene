@@ -1,0 +1,32 @@
+Section copy and typography source verification
+
+Date: 2026-07-01 22:55 +02:00
+Route intended for runtime verification: http://127.0.0.1:5173/
+
+Build:
+- npm.cmd run build completed successfully.
+
+Source checks:
+- src/App.tsx contains "I learn by building and fixing real systems."
+- src/App.tsx contains "What I use in my projects and labs."
+- src/App.tsx contains "How I approach technical work."
+- src/App.tsx contains work principle titles:
+  - Build and test
+  - Document changes
+  - Troubleshoot step by step
+- src/App.tsx and src/styles.css no longer contain:
+  - Simple habits that make technical work calmer.
+  - Document and understand
+  - Troubleshoot methodically
+  - Technical areas I keep returning to in projects and labs.
+  - I learn best by building systems I can test, break, document and improve.
+
+CSS checks:
+- About, Skills and How I Work headings use a section-specific heading style.
+- About, Skills and How I Work desktop grids use:
+  grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr)
+
+Notes:
+- In-app browser verification repeatedly timed out during this slice.
+- Edge headless screenshots were attempted, but hash-route screenshots landed at the top of the page and are not used as primary visual proof.
+- No dependencies, commit, push, branch, deployment or Git remote change was performed.

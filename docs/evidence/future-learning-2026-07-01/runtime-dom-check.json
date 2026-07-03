@@ -1,0 +1,55 @@
+﻿{
+    "url":  "http://127.0.0.1:5173/",
+    "domLength":  81644,
+    "containsFutureLearningGoals":  true,
+    "containsIntro":  true,
+    "goals":  [
+                  {
+                      "text":  "Cisco CCNA",
+                      "present":  true
+                  },
+                  {
+                      "text":  "Microsoft AZ-900",
+                      "present":  true
+                  },
+                  {
+                      "text":  "Microsoft MS-900",
+                      "present":  true
+                  },
+                  {
+                      "text":  "Linux Essentials",
+                      "present":  true
+                  }
+              ],
+    "labels":  [
+                   {
+                       "text":  "Long-term goal",
+                       "present":  true
+                   },
+                   {
+                       "text":  "Future target",
+                       "present":  true
+                   }
+               ],
+    "bannedTerms":  {
+
+                    },
+    "pageOrderProof":  [
+                           {
+                               "marker":  "id=\"projects\"",
+                               "index":  66185
+                           },
+                           {
+                               "marker":  "id=\"why-hire-me\"",
+                               "index":  75477
+                           },
+                           {
+                               "marker":  "id=\"learning-journey\"",
+                               "index":  77347
+                           },
+                           {
+                               "marker":  "id=\"contact\"",
+                               "index":  78724
+                           }
+                       ]
+}

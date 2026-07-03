@@ -1,0 +1,305 @@
+{
+  "bannerAudit": [
+    {
+      "name": "320",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-banner-2026-07-01\\320-projects-visible.png",
+      "metrics": {
+        "cardRects": [
+          {
+            "gridColumns": "246px",
+            "height": 557,
+            "width": 288
+          },
+          {
+            "gridColumns": "246px",
+            "height": 621,
+            "width": 288
+          },
+          {
+            "gridColumns": "246px",
+            "height": 553,
+            "width": 288
+          },
+          {
+            "gridColumns": "246px",
+            "height": 582,
+            "width": 288
+          },
+          {
+            "gridColumns": "246px",
+            "height": 585,
+            "width": 288
+          }
+        ],
+        "firstRowCards": 1,
+        "horizontalOverflow": false,
+        "innerWidth": 320,
+        "moreIndicators": [
+          "+3 more",
+          "+3 more",
+          "+6 more",
+          "+2 more"
+        ],
+        "overflowingLabels": [],
+        "projectCount": 5,
+        "projectOrder": [
+          "Subnet Master",
+          "Dell Fan Controller",
+          "VPS Infrastructure",
+          "Infrastructure Automation Platform",
+          "Automation Systems"
+        ],
+        "rows": 5,
+        "scrollWidth": 320,
+        "visibleTechCounts": [
+          4,
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "name": "390",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-banner-2026-07-01\\390-projects-visible.png",
+      "metrics": {
+        "cardRects": [
+          {
+            "gridColumns": "301px",
+            "height": 491,
+            "width": 343
+          },
+          {
+            "gridColumns": "301px",
+            "height": 621,
+            "width": 343
+          },
+          {
+            "gridColumns": "301px",
+            "height": 521,
+            "width": 343
+          },
+          {
+            "gridColumns": "301px",
+            "height": 582,
+            "width": 343
+          },
+          {
+            "gridColumns": "301px",
+            "height": 553,
+            "width": 343
+          }
+        ],
+        "firstRowCards": 1,
+        "horizontalOverflow": false,
+        "innerWidth": 390,
+        "moreIndicators": [
+          "+3 more",
+          "+3 more",
+          "+6 more",
+          "+2 more"
+        ],
+        "overflowingLabels": [],
+        "projectCount": 5,
+        "projectOrder": [
+          "Subnet Master",
+          "Dell Fan Controller",
+          "VPS Infrastructure",
+          "Infrastructure Automation Platform",
+          "Automation Systems"
+        ],
+        "rows": 5,
+        "scrollWidth": 375,
+        "visibleTechCounts": [
+          4,
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "name": "768",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-banner-2026-07-01\\768-projects-visible.png",
+      "metrics": {
+        "cardRects": [
+          {
+            "gridColumns": "655px",
+            "height": 425,
+            "width": 705
+          },
+          {
+            "gridColumns": "655px",
+            "height": 457,
+            "width": 705
+          },
+          {
+            "gridColumns": "655px",
+            "height": 389,
+            "width": 705
+          },
+          {
+            "gridColumns": "655px",
+            "height": 425,
+            "width": 705
+          },
+          {
+            "gridColumns": "655px",
+            "height": 389,
+            "width": 705
+          }
+        ],
+        "firstRowCards": 1,
+        "horizontalOverflow": false,
+        "innerWidth": 768,
+        "moreIndicators": [
+          "+3 more",
+          "+3 more",
+          "+6 more",
+          "+2 more"
+        ],
+        "overflowingLabels": [],
+        "projectCount": 5,
+        "projectOrder": [
+          "Subnet Master",
+          "Dell Fan Controller",
+          "VPS Infrastructure",
+          "Infrastructure Automation Platform",
+          "Automation Systems"
+        ],
+        "rows": 5,
+        "scrollWidth": 753,
+        "visibleTechCounts": [
+          4,
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "name": "1024",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-banner-2026-07-01\\1024-projects-visible.png",
+      "metrics": {
+        "cardRects": [
+          {
+            "gridColumns": "379.719px 214.016px 269.266px",
+            "height": 220,
+            "width": 945
+          },
+          {
+            "gridColumns": "379.719px 214.016px 269.266px",
+            "height": 236,
+            "width": 945
+          },
+          {
+            "gridColumns": "379.719px 214.016px 269.266px",
+            "height": 218,
+            "width": 945
+          },
+          {
+            "gridColumns": "379.719px 214.016px 269.266px",
+            "height": 252,
+            "width": 945
+          },
+          {
+            "gridColumns": "379.719px 214.016px 269.266px",
+            "height": 218,
+            "width": 945
+          }
+        ],
+        "firstRowCards": 1,
+        "horizontalOverflow": false,
+        "innerWidth": 1024,
+        "moreIndicators": [
+          "+3 more",
+          "+3 more",
+          "+6 more",
+          "+2 more"
+        ],
+        "overflowingLabels": [],
+        "projectCount": 5,
+        "projectOrder": [
+          "Subnet Master",
+          "Dell Fan Controller",
+          "VPS Infrastructure",
+          "Infrastructure Automation Platform",
+          "Automation Systems"
+        ],
+        "rows": 5,
+        "scrollWidth": 1009,
+        "visibleTechCounts": [
+          4,
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "name": "1440",
+      "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-banner-2026-07-01\\1440-projects-visible.png",
+      "metrics": {
+        "cardRects": [
+          {
+            "gridColumns": "470.797px 265.359px 333.844px",
+            "height": 220,
+            "width": 1152
+          },
+          {
+            "gridColumns": "470.797px 265.359px 333.844px",
+            "height": 220,
+            "width": 1152
+          },
+          {
+            "gridColumns": "470.797px 265.359px 333.844px",
+            "height": 184,
+            "width": 1152
+          },
+          {
+            "gridColumns": "470.797px 265.359px 333.844px",
+            "height": 220,
+            "width": 1152
+          },
+          {
+            "gridColumns": "470.797px 265.359px 333.844px",
+            "height": 184,
+            "width": 1152
+          }
+        ],
+        "firstRowCards": 1,
+        "horizontalOverflow": false,
+        "innerWidth": 1440,
+        "moreIndicators": [
+          "+3 more",
+          "+3 more",
+          "+6 more",
+          "+2 more"
+        ],
+        "overflowingLabels": [],
+        "projectCount": 5,
+        "projectOrder": [
+          "Subnet Master",
+          "Dell Fan Controller",
+          "VPS Infrastructure",
+          "Infrastructure Automation Platform",
+          "Automation Systems"
+        ],
+        "rows": 5,
+        "scrollWidth": 1425,
+        "visibleTechCounts": [
+          4,
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    }
+  ],
+  "logsBanner": []
+}

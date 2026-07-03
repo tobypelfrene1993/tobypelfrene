@@ -1,0 +1,339 @@
+{
+  "checkedAt": "2026-07-01T20:43:34.440Z",
+  "url": "http://127.0.0.1:5173/#projects",
+  "audit": [
+    {
+      "height": 720,
+      "listHeight": 2032,
+      "order": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "overflowing": [],
+      "projectRows": 5,
+      "projectsHeight": 2416,
+      "realHorizontalOverflow": false,
+      "rows": [
+        {
+          "content": {
+            "height": 181,
+            "width": 351
+          },
+          "preview": {
+            "height": 165,
+            "width": 351
+          },
+          "rowHeight": 386,
+          "rowWidth": 351,
+          "title": "Subnet Master"
+        },
+        {
+          "content": {
+            "height": 204,
+            "width": 351
+          },
+          "preview": {
+            "height": 165,
+            "width": 351
+          },
+          "rowHeight": 409,
+          "rowWidth": 351,
+          "title": "Dell Fan Controller"
+        },
+        {
+          "content": {
+            "height": 204,
+            "width": 351
+          },
+          "preview": {
+            "height": 165,
+            "width": 351
+          },
+          "rowHeight": 410,
+          "rowWidth": 351,
+          "title": "VPS Infrastructure"
+        },
+        {
+          "content": {
+            "height": 201,
+            "width": 351
+          },
+          "preview": {
+            "height": 196,
+            "width": 351
+          },
+          "rowHeight": 439,
+          "rowWidth": 351,
+          "title": "Infrastructure Automation Platform"
+        },
+        {
+          "content": {
+            "height": 182,
+            "width": 351
+          },
+          "preview": {
+            "height": 165,
+            "width": 351
+          },
+          "rowHeight": 387,
+          "rowWidth": 351,
+          "title": "Automation Systems"
+        }
+      ],
+      "width": 390
+    },
+    {
+      "height": 720,
+      "listHeight": 952,
+      "order": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "overflowing": [],
+      "projectRows": 5,
+      "projectsHeight": 1178,
+      "realHorizontalOverflow": false,
+      "rows": [
+        {
+          "content": {
+            "height": 151,
+            "width": 566
+          },
+          "preview": {
+            "height": 155,
+            "width": 136
+          },
+          "rowHeight": 180,
+          "rowWidth": 721,
+          "title": "Subnet Master"
+        },
+        {
+          "content": {
+            "height": 151,
+            "width": 566
+          },
+          "preview": {
+            "height": 170,
+            "width": 136
+          },
+          "rowHeight": 195,
+          "rowWidth": 721,
+          "title": "Dell Fan Controller"
+        },
+        {
+          "content": {
+            "height": 174,
+            "width": 566
+          },
+          "preview": {
+            "height": 155,
+            "width": 136
+          },
+          "rowHeight": 199,
+          "rowWidth": 721,
+          "title": "VPS Infrastructure"
+        },
+        {
+          "content": {
+            "height": 171,
+            "width": 566
+          },
+          "preview": {
+            "height": 148,
+            "width": 136
+          },
+          "rowHeight": 196,
+          "rowWidth": 721,
+          "title": "Infrastructure Automation Platform"
+        },
+        {
+          "content": {
+            "height": 152,
+            "width": 566
+          },
+          "preview": {
+            "height": 155,
+            "width": 136
+          },
+          "rowHeight": 180,
+          "rowWidth": 721,
+          "title": "Automation Systems"
+        }
+      ],
+      "width": 768
+    },
+    {
+      "height": 720,
+      "listHeight": 956,
+      "order": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "overflowing": [],
+      "projectRows": 5,
+      "projectsHeight": 1176,
+      "realHorizontalOverflow": false,
+      "rows": [
+        {
+          "content": {
+            "height": 129,
+            "width": 779
+          },
+          "preview": {
+            "height": 164,
+            "width": 172
+          },
+          "rowHeight": 192,
+          "rowWidth": 977,
+          "title": "Subnet Master"
+        },
+        {
+          "content": {
+            "height": 129,
+            "width": 779
+          },
+          "preview": {
+            "height": 164,
+            "width": 172
+          },
+          "rowHeight": 192,
+          "rowWidth": 977,
+          "title": "Dell Fan Controller"
+        },
+        {
+          "content": {
+            "height": 153,
+            "width": 779
+          },
+          "preview": {
+            "height": 164,
+            "width": 172
+          },
+          "rowHeight": 192,
+          "rowWidth": 977,
+          "title": "VPS Infrastructure"
+        },
+        {
+          "content": {
+            "height": 150,
+            "width": 779
+          },
+          "preview": {
+            "height": 157,
+            "width": 172
+          },
+          "rowHeight": 185,
+          "rowWidth": 977,
+          "title": "Infrastructure Automation Platform"
+        },
+        {
+          "content": {
+            "height": 130,
+            "width": 779
+          },
+          "preview": {
+            "height": 164,
+            "width": 172
+          },
+          "rowHeight": 192,
+          "rowWidth": 977,
+          "title": "Automation Systems"
+        }
+      ],
+      "width": 1024
+    },
+    {
+      "height": 900,
+      "listHeight": 1029,
+      "order": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "overflowing": [],
+      "projectRows": 5,
+      "projectsHeight": 1330,
+      "realHorizontalOverflow": false,
+      "rows": [
+        {
+          "content": {
+            "height": 106,
+            "width": 938
+          },
+          "preview": {
+            "height": 158,
+            "width": 207
+          },
+          "rowHeight": 192,
+          "rowWidth": 1180,
+          "title": "Subnet Master"
+        },
+        {
+          "content": {
+            "height": 106,
+            "width": 938
+          },
+          "preview": {
+            "height": 180,
+            "width": 207
+          },
+          "rowHeight": 215,
+          "rowWidth": 1180,
+          "title": "Dell Fan Controller"
+        },
+        {
+          "content": {
+            "height": 127,
+            "width": 938
+          },
+          "preview": {
+            "height": 158,
+            "width": 207
+          },
+          "rowHeight": 192,
+          "rowWidth": 1180,
+          "title": "VPS Infrastructure"
+        },
+        {
+          "content": {
+            "height": 127,
+            "width": 938
+          },
+          "preview": {
+            "height": 179,
+            "width": 207
+          },
+          "rowHeight": 213,
+          "rowWidth": 1180,
+          "title": "Infrastructure Automation Platform"
+        },
+        {
+          "content": {
+            "height": 127,
+            "width": 938
+          },
+          "preview": {
+            "height": 180,
+            "width": 207
+          },
+          "rowHeight": 215,
+          "rowWidth": 1180,
+          "title": "Automation Systems"
+        }
+      ],
+      "width": 1440
+    }
+  ],
+  "console": []
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "name": "320",
+    "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-compact-2026-07-01\\320-projects.png",
+    "metrics": {
+      "cardRects": [
+        {
+          "height": 559,
+          "left": 16,
+          "top": 6584,
+          "width": 288
+        },
+        {
+          "height": 579,
+          "left": 16,
+          "top": 7163,
+          "width": 288
+        },
+        {
+          "height": 547,
+          "left": 16,
+          "top": 7762,
+          "width": 288
+        },
+        {
+          "height": 540,
+          "left": 16,
+          "top": 8329,
+          "width": 288
+        },
+        {
+          "height": 579,
+          "left": 16,
+          "top": 8889,
+          "width": 288
+        }
+      ],
+      "firstRowCards": 1,
+      "horizontalOverflow": false,
+      "innerWidth": 320,
+      "maxCardHeight": 579,
+      "minCardHeight": 540,
+      "moreIndicators": [
+        "+3 more",
+        "+3 more",
+        "+6 more",
+        "+2 more"
+      ],
+      "overflowingInteractiveLabels": [],
+      "projectCount": 5,
+      "projectOrder": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "rows": 5,
+      "scrollWidth": 320,
+      "sectionHeight": 3394,
+      "visibleTechCounts": [
+        4,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  },
+  {
+    "name": "390",
+    "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-compact-2026-07-01\\390-projects.png",
+    "metrics": {
+      "cardRects": [
+        {
+          "height": 493,
+          "left": 16,
+          "top": 6242,
+          "width": 343
+        },
+        {
+          "height": 579,
+          "left": 16,
+          "top": 6755,
+          "width": 343
+        },
+        {
+          "height": 515,
+          "left": 16,
+          "top": 7354,
+          "width": 343
+        },
+        {
+          "height": 540,
+          "left": 16,
+          "top": 7889,
+          "width": 343
+        },
+        {
+          "height": 547,
+          "left": 16,
+          "top": 8449,
+          "width": 343
+        }
+      ],
+      "firstRowCards": 1,
+      "horizontalOverflow": false,
+      "innerWidth": 390,
+      "maxCardHeight": 579,
+      "minCardHeight": 493,
+      "moreIndicators": [
+        "+3 more",
+        "+3 more",
+        "+6 more",
+        "+2 more"
+      ],
+      "overflowingInteractiveLabels": [],
+      "projectCount": 5,
+      "projectOrder": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "rows": 5,
+      "scrollWidth": 375,
+      "sectionHeight": 3236,
+      "visibleTechCounts": [
+        4,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  },
+  {
+    "name": "768",
+    "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-compact-2026-07-01\\768-projects.png",
+    "metrics": {
+      "cardRects": [
+        {
+          "height": 384,
+          "left": 24,
+          "top": 3706,
+          "width": 705
+        },
+        {
+          "height": 416,
+          "left": 24,
+          "top": 4110,
+          "width": 705
+        },
+        {
+          "height": 384,
+          "left": 24,
+          "top": 4546,
+          "width": 705
+        },
+        {
+          "height": 384,
+          "left": 24,
+          "top": 4950,
+          "width": 705
+        },
+        {
+          "height": 384,
+          "left": 24,
+          "top": 5354,
+          "width": 705
+        }
+      ],
+      "firstRowCards": 1,
+      "horizontalOverflow": false,
+      "innerWidth": 768,
+      "maxCardHeight": 416,
+      "minCardHeight": 384,
+      "moreIndicators": [
+        "+3 more",
+        "+3 more",
+        "+6 more",
+        "+2 more"
+      ],
+      "overflowingInteractiveLabels": [],
+      "projectCount": 5,
+      "projectOrder": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "rows": 5,
+      "scrollWidth": 753,
+      "sectionHeight": 2485,
+      "visibleTechCounts": [
+        4,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  },
+  {
+    "name": "1024",
+    "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-compact-2026-07-01\\1024-projects.png",
+    "metrics": {
+      "cardRects": [
+        {
+          "height": 496,
+          "left": 32,
+          "top": 3304,
+          "width": 463
+        },
+        {
+          "height": 496,
+          "left": 515,
+          "top": 3304,
+          "width": 463
+        },
+        {
+          "height": 496,
+          "left": 32,
+          "top": 3820,
+          "width": 463
+        },
+        {
+          "height": 496,
+          "left": 515,
+          "top": 3820,
+          "width": 463
+        },
+        {
+          "height": 496,
+          "left": 32,
+          "top": 4336,
+          "width": 463
+        }
+      ],
+      "firstRowCards": 2,
+      "horizontalOverflow": false,
+      "innerWidth": 1024,
+      "maxCardHeight": 496,
+      "minCardHeight": 496,
+      "moreIndicators": [
+        "+3 more",
+        "+3 more",
+        "+6 more",
+        "+2 more"
+      ],
+      "overflowingInteractiveLabels": [],
+      "projectCount": 5,
+      "projectOrder": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "rows": 3,
+      "scrollWidth": 1009,
+      "sectionHeight": 2029,
+      "visibleTechCounts": [
+        4,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  },
+  {
+    "name": "1440",
+    "screenshotPath": "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\project-compact-2026-07-01\\1440-projects.png",
+    "metrics": {
+      "cardRects": [
+        {
+          "height": 432,
+          "left": 137,
+          "top": 3170,
+          "width": 566
+        },
+        {
+          "height": 432,
+          "left": 723,
+          "top": 3170,
+          "width": 566
+        },
+        {
+          "height": 400,
+          "left": 137,
+          "top": 3622,
+          "width": 566
+        },
+        {
+          "height": 400,
+          "left": 723,
+          "top": 3622,
+          "width": 566
+        },
+        {
+          "height": 432,
+          "left": 137,
+          "top": 4042,
+          "width": 566
+        }
+      ],
+      "firstRowCards": 2,
+      "horizontalOverflow": false,
+      "innerWidth": 1440,
+      "maxCardHeight": 432,
+      "minCardHeight": 400,
+      "moreIndicators": [
+        "+3 more",
+        "+3 more",
+        "+6 more",
+        "+2 more"
+      ],
+      "overflowingInteractiveLabels": [],
+      "projectCount": 5,
+      "projectOrder": [
+        "Subnet Master",
+        "Dell Fan Controller",
+        "VPS Infrastructure",
+        "Infrastructure Automation Platform",
+        "Automation Systems"
+      ],
+      "rows": 3,
+      "scrollWidth": 1425,
+      "sectionHeight": 1805,
+      "visibleTechCounts": [
+        4,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  }
+]

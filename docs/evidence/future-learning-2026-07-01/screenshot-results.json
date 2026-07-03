@@ -1,0 +1,32 @@
+﻿[
+    {
+        "viewport":  "1024x900",
+        "screenshot":  "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\future-learning-2026-07-01\\future-learning-1024.png",
+        "exists":  true,
+        "bytes":  682626
+    },
+    {
+        "viewport":  "1440x900",
+        "screenshot":  "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\future-learning-2026-07-01\\future-learning-1440.png",
+        "exists":  true,
+        "bytes":  796212
+    },
+    {
+        "viewport":  "320x900",
+        "screenshot":  "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\future-learning-2026-07-01\\future-learning-320.png",
+        "exists":  true,
+        "bytes":  202836
+    },
+    {
+        "viewport":  "390x900",
+        "screenshot":  "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\future-learning-2026-07-01\\future-learning-390.png",
+        "exists":  true,
+        "bytes":  242271
+    },
+    {
+        "viewport":  "768x900",
+        "screenshot":  "C:\\Project Toby\\tobypelfrene\\docs\\evidence\\future-learning-2026-07-01\\future-learning-768.png",
+        "exists":  true,
+        "bytes":  481990
+    }
+]

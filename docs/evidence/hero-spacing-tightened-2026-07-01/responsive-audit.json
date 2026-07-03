@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-07-01T20:21:50.846Z",
+  "url": "http://127.0.0.1:5173/",
+  "audit": [
+    {
+      "about": {
+        "bottom": 6573,
+        "height": 1103,
+        "top": 5471
+      },
+      "bodyScrollWidth": 375,
+      "firstProject": {
+        "bottom": 2384,
+        "height": 636,
+        "top": 1747
+      },
+      "firstProjectNearFirstViewport": false,
+      "height": 720,
+      "hero": {
+        "bottom": 1321,
+        "height": 1321,
+        "top": 0
+      },
+      "heroCopy": {
+        "bottom": 776,
+        "height": 612,
+        "top": 163
+      },
+      "overflowing": [],
+      "portrait": {
+        "bottom": 1309,
+        "height": 509,
+        "top": 800
+      },
+      "projectRows": 5,
+      "realHorizontalOverflow": false,
+      "scrollWidth": 375,
+      "selectedWorkVisibleEarly": false,
+      "width": 390,
+      "work": {
+        "bottom": 5471,
+        "height": 4150,
+        "top": 1321
+      },
+      "workHeading": {
+        "bottom": 1731,
+        "height": 399,
+        "top": 1333
+      }
+    },
+    {
+      "about": {
+        "bottom": 3822,
+        "height": 835,
+        "top": 2987
+      },
+      "bodyScrollWidth": 753,
+      "firstProject": {
+        "bottom": 1146,
+        "height": 382,
+        "top": 764
+      },
+      "firstProjectNearFirstViewport": true,
+      "height": 720,
+      "hero": {
+        "bottom": 527,
+        "height": 527,
+        "top": 0
+      },
+      "heroCopy": {
+        "bottom": 512,
+        "height": 427,
+        "top": 85
+      },
+      "overflowing": [],
+      "portrait": {
+        "bottom": 505,
+        "height": 413,
+        "top": 92
+      },
+      "projectRows": 5,
+      "realHorizontalOverflow": false,
+      "scrollWidth": 753,
+      "selectedWorkVisibleEarly": true,
+      "width": 768,
+      "work": {
+        "bottom": 2987,
+        "height": 2459,
+        "top": 527
+      },
+      "workHeading": {
+        "bottom": 745,
+        "height": 204,
+        "top": 541
+      }
+    },
+    {
+      "about": {
+        "bottom": 4087,
+        "height": 640,
+        "top": 3447
+      },
+      "bodyScrollWidth": 1009,
+      "firstProject": {
+        "bottom": 1288,
+        "height": 443,
+        "top": 845
+      },
+      "firstProjectNearFirstViewport": true,
+      "height": 720,
+      "hero": {
+        "bottom": 583,
+        "height": 583,
+        "top": 0
+      },
+      "heroCopy": {
+        "bottom": 536,
+        "height": 418,
+        "top": 118
+      },
+      "overflowing": [],
+      "portrait": {
+        "bottom": 562,
+        "height": 470,
+        "top": 92
+      },
+      "projectRows": 5,
+      "realHorizontalOverflow": false,
+      "scrollWidth": 1009,
+      "selectedWorkVisibleEarly": true,
+      "width": 1024,
+      "work": {
+        "bottom": 3447,
+        "height": 2865,
+        "top": 583
+      },
+      "workHeading": {
+        "bottom": 821,
+        "height": 220,
+        "top": 601
+      }
+    },
+    {
+      "about": {
+        "bottom": 4520,
+        "height": 670,
+        "top": 3850
+      },
+      "bodyScrollWidth": 1425,
+      "firstProject": {
+        "bottom": 1432,
+        "height": 496,
+        "top": 935
+      },
+      "firstProjectNearFirstViewport": true,
+      "height": 900,
+      "hero": {
+        "bottom": 614,
+        "height": 614,
+        "top": 0
+      },
+      "heroCopy": {
+        "bottom": 571,
+        "height": 452,
+        "top": 119
+      },
+      "overflowing": [],
+      "portrait": {
+        "bottom": 590,
+        "height": 490,
+        "top": 100
+      },
+      "projectRows": 5,
+      "realHorizontalOverflow": false,
+      "scrollWidth": 1425,
+      "selectedWorkVisibleEarly": true,
+      "width": 1440,
+      "work": {
+        "bottom": 3850,
+        "height": 3235,
+        "top": 614
+      },
+      "workHeading": {
+        "bottom": 903,
+        "height": 268,
+        "top": 636
+      }
+    }
+  ],
+  "console": []
+}

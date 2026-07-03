@@ -1,0 +1,183 @@
+# PROJECT_STATE.yaml - Structured current truth
+
+metadata:
+  updated_at: 2026-07-01T23:29:44+02:00
+  updated_by: agent
+  version: "statedd-template-v3"
+
+workflow:
+  repo_mode: bootstrap
+  bootstrap:
+    completed: false
+    completed_on: null
+    system_investigated: true
+    repo_investigated: true
+    user_intake_complete: true
+    unknowns_remaining:
+      - final public email, LinkedIn URL and GitHub URL are not verified
+      - final production domain is not verified
+      - final approved CV artifact is not provided
+      - VPS host, web root and HTTPS configuration are not yet verified
+
+verification_labels:
+  observed: verified directly in the current session
+  unknown: not yet determined from currently available evidence
+  reported: supported by prior evidence, not re-verified
+  blocked: verification attempted but prevented
+  assumed: temporary working assumption
+  stale: previously verified but no longer fresh
+  invalid: known false or superseded
+
+current_state:
+  repository:
+    canonical_path: C:\Project Toby\tobypelfrene
+    path_status: observed
+    branch: main
+    head: null
+    worktree_status: untracked initial scaffold plus portfolio implementation; no commits yet
+    remote: none configured
+
+  operating_mode:
+    status: observed
+    mode: bootstrap
+    summary: |
+      This repository is currently in bootstrap mode. It should not flip to
+      operating mode until the baseline state, backlog, queue, and evidence are
+      truthfully established.
+
+  project:
+    name: Toby Pelfrene Portfolio
+    type: static_react_portfolio
+    lifecycle_stage: bootstrap
+    truth_summary: role_positioning_build_verified
+    primary_user: Toby Pelfrene and recruiters or hiring managers for Network Administration, Systems Administration, Server Administration, IT Infrastructure and IT Support roles
+    positioning: Network & Systems Administration Student open to junior infrastructure-focused roles; not a trader or financial influencer
+
+  runtime_identity:
+    status: observed_local_preview
+    repo_path: C:\Project Toby\tobypelfrene
+    branch: main
+    head: null
+    process_or_container: npm.cmd run dev via Vite dev server, node listener PID 16512
+    port_or_base_url: http://127.0.0.1:5173/
+    rebuilt_in_current_slice: true
+    duplicate_runtimes_checked: true
+    notes: |
+      Production build was verified after the ResumX-inspired editorial
+      structural refresh and the role-positioning copy update. The latest
+      slice was verified with build, state-doc, JSON-LD and source checks and
+      did not edit CSS layout files. Public VPS runtime identity is not yet
+      proven.
+
+  environment:
+    status: observed
+    host:
+      os: Windows 11
+      kernel: 10.0.26200
+      shell: C:\Users\Admin\AppData\Local\Programs\Python\Python312\python.exe
+      terminal: unknown
+    package_managers:
+      - npm 11.13.0
+    language_runtimes:
+      python: 3.12.10
+      node: v24.16.0
+    container_tooling:
+      podman: absent
+      docker: absent
+    browser_tooling:
+      chrome: present at C:\Program Files\Google\Chrome\Application\chrome.exe
+      edge: present at C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+    ports:
+      listeners:
+        - 127.0.0.1:4173 served by node PID 9680 during verification
+      notes: |
+        Port 4173 was checked with netstat during Learning Journey verification.
+
+  repository_structure:
+    status: observed
+    top_level_entries:
+      - .github
+      - .gitignore
+      - docs
+      - fixtures
+      - index.html
+      - package-lock.json
+      - package.json
+      - prompts
+      - public
+      - scripts
+      - src
+      - tailwind.config.ts
+      - tsconfig.app.json
+      - tsconfig.json
+      - tsconfig.node.json
+      - vite.config.ts
+      - AGENTS.md
+      - BACKLOG.md
+      - LICENSE
+      - NEXT_ACTIONS.md
+      - PROJECT_ADAPTER.yaml
+      - PROJECT_DNA.yaml
+      - PROJECT_STATE.yaml
+      - README.md
+      - STATUS.md
+      - WORKLOG.md
+    manifests:
+      - package.json
+      - package-lock.json
+      - README.md
+      - index.html
+      - vite.config.ts
+      - tailwind.config.ts
+      - scripts/init_template.py
+      - scripts/check_state_docs.py
+      - scripts/test_init_template.py
+    entrypoints:
+      - src/main.tsx
+      - src/App.tsx
+      - package.json:scripts.dev
+      - package.json:scripts.build
+      - package.json:scripts.preview
+      - scripts/init_template.py
+      - scripts/check_state_docs.py
+      - scripts/test_init_template.py
+    test_setup:
+      - npm run build
+      - npm run preview
+      - scripts/check_state_docs.py
+      - scripts/test_init_template.py
+    deployment_assumptions:
+      - static build in dist can be served from a VPS with Nginx or equivalent
+      - final public domain and TLS configuration are not yet verified
+    contradictions:
+      - email is implemented but still requires final user confirmation before public launch
+      - LinkedIn and GitHub URLs were updated from user-provided values on 2026-06-10
+
+  evidence:
+    status: active
+    ledger: docs/EVIDENCE_LOG.md
+    acceptance_freezes: docs/ACCEPTANCE_FREEZES.md
+    artifact_root: docs/evidence
+    standard: browser_verification_or_test_output_for_user_facing_claims
+
+  documentation:
+    status: observed
+    primary_user_guide: README.md
+    live_docs:
+      - index.html
+      - src/App.tsx
+      - src/portfolioData.ts
+      - src/styles.css
+      - README.md
+      - AGENTS.md
+      - STATUS.md
+      - PROJECT_STATE.yaml
+      - PROJECT_DNA.yaml
+      - PROJECT_ADAPTER.yaml
+      - NEXT_ACTIONS.md
+      - BACKLOG.md
+      - WORKLOG.md
+      - docs/EVIDENCE_LOG.md
+      - docs/ACCEPTANCE_FREEZES.md
+
+active_problems: []

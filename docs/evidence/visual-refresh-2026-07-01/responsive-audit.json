@@ -1,0 +1,174 @@
+[
+  {
+    "name": "320",
+    "metrics": {
+      "accentCounts": {
+        "hire": 5,
+        "journey": 4,
+        "projects": 4,
+        "skills": 18
+      },
+      "buttonProblems": [],
+      "contrastChecks": [
+        {
+          "name": "bodyText",
+          "ratio": 17.19
+        },
+        {
+          "name": "secondaryText",
+          "ratio": 12.33
+        },
+        {
+          "name": "primaryButtonText",
+          "ratio": 7.99
+        },
+        {
+          "name": "fieldText",
+          "ratio": 18.19
+        },
+        {
+          "name": "contactAccent",
+          "ratio": 12.38
+        }
+      ],
+      "focusRulePresent": true,
+      "horizontalOverflow": false,
+      "innerWidth": 320,
+      "reducedMotionRulePresent": true,
+      "scrollWidth": 320,
+      "viewport": {
+        "height": 780,
+        "width": 320
+      }
+    }
+  },
+  {
+    "name": "mobile",
+    "metrics": {
+      "accentCounts": {
+        "hire": 5,
+        "journey": 4,
+        "projects": 4,
+        "skills": 18
+      },
+      "buttonProblems": [],
+      "contrastChecks": [
+        {
+          "name": "bodyText",
+          "ratio": 17.19
+        },
+        {
+          "name": "secondaryText",
+          "ratio": 12.33
+        },
+        {
+          "name": "primaryButtonText",
+          "ratio": 7.99
+        },
+        {
+          "name": "fieldText",
+          "ratio": 18.19
+        },
+        {
+          "name": "contactAccent",
+          "ratio": 12.38
+        }
+      ],
+      "focusRulePresent": true,
+      "horizontalOverflow": false,
+      "innerWidth": 390,
+      "reducedMotionRulePresent": true,
+      "scrollWidth": 375,
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    }
+  },
+  {
+    "name": "tablet",
+    "metrics": {
+      "accentCounts": {
+        "hire": 5,
+        "journey": 4,
+        "projects": 4,
+        "skills": 18
+      },
+      "buttonProblems": [],
+      "contrastChecks": [
+        {
+          "name": "bodyText",
+          "ratio": 17.19
+        },
+        {
+          "name": "secondaryText",
+          "ratio": 12.33
+        },
+        {
+          "name": "primaryButtonText",
+          "ratio": 7.99
+        },
+        {
+          "name": "fieldText",
+          "ratio": 18.19
+        },
+        {
+          "name": "contactAccent",
+          "ratio": 12.38
+        }
+      ],
+      "focusRulePresent": true,
+      "horizontalOverflow": false,
+      "innerWidth": 768,
+      "reducedMotionRulePresent": true,
+      "scrollWidth": 753,
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    }
+  },
+  {
+    "name": "desktop",
+    "metrics": {
+      "accentCounts": {
+        "hire": 5,
+        "journey": 4,
+        "projects": 4,
+        "skills": 18
+      },
+      "buttonProblems": [],
+      "contrastChecks": [
+        {
+          "name": "bodyText",
+          "ratio": 17.19
+        },
+        {
+          "name": "secondaryText",
+          "ratio": 12.33
+        },
+        {
+          "name": "primaryButtonText",
+          "ratio": 7.99
+        },
+        {
+          "name": "fieldText",
+          "ratio": 18.19
+        },
+        {
+          "name": "contactAccent",
+          "ratio": 12.38
+        }
+      ],
+      "focusRulePresent": true,
+      "horizontalOverflow": false,
+      "innerWidth": 1440,
+      "reducedMotionRulePresent": true,
+      "scrollWidth": 1425,
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    }
+  }
+]
