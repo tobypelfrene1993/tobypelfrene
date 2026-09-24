@@ -48,6 +48,7 @@ type Project = {
   accent: 'blue' | 'teal' | 'violet' | 'green' | 'warm';
   featured?: boolean;
   featuredOrder?: number;
+  visible?: boolean;
   github?: string;
   demo?: string;
   privateRepository?: boolean;
@@ -63,7 +64,7 @@ export const projects: Project[] = [
   {
     title: 'Subnet Master',
     description:
-      'A web-based subnetting and VLSM tool for practising CIDR calculations, IP planning and networking exercises. Built with React and TypeScript.',
+      'A browser-based subnetting and VLSM tool for calculating IPv4 ranges, planning networks and practising CIDR. Built with React and TypeScript.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Vite'],
     highlights: ['CIDR calculations', 'VLSM planning', 'Networking exercises'],
     details: ['Applies networking concepts in a practical browser-based tool.', 'Helps make IP address planning and subnetting practice clearer for students.'],
@@ -77,26 +78,61 @@ export const projects: Project[] = [
   {
     title: 'Dell Fan Controller',
     description:
-      'A PowerShell project that monitors CPU temperature and safely manages fan-control behaviour on supported Dell systems. It includes validation, logging, recovery logic and automated tests.',
+      'A PowerShell controller for supported Dell systems that reads CPU temperature and manages fan settings with validation, logging, recovery and automated tests.',
     technologies: ['PowerShell', 'Core Temp', 'Dell Command | Configure', 'Windows Task Scheduler', 'JSON configuration', 'CSV logging', 'State management', 'Automated tests'],
     highlights: ['Temperature monitoring', 'Safe fan-control automation', 'Recovery and validation logic'],
     details: ['Uses read-only validation and dry-run testing before hardware-write paths are used.', 'Includes explicit safeguards, state recovery, logging and fail-closed validation for selected Dell hardware.'],
     status: 'Public repository',
     accent: 'teal',
     featured: true,
-    featuredOrder: 3,
+    featuredOrder: 2,
     github: 'https://github.com/tobypelfrene1993/dell-fan-controller',
   },
   {
+    title: 'MC Service Evergem',
+    description:
+      'A live website for a local service business, built and deployed with a focus on clear content, responsive design, HTTPS hosting and privacy-friendly analytics.',
+    technologies: ['Vite', 'Nginx', 'HTTPS', 'Analytics', 'Deployment'],
+    highlights: ['Live business website', 'HTTPS hosting', 'Privacy-friendly analytics'],
+    details: ['Uses HTML, CSS and JavaScript for the site.', 'The public repository includes Python and SQLite analytics code and Nginx deployment configuration.'],
+    status: 'Live project',
+    accent: 'green',
+    featured: true,
+    featuredOrder: 3,
+    github: 'https://github.com/tobypelfrene1993/mcservice-evergem-v2',
+    demo: 'https://mcservice-evergem.be',
+  },
+  {
     title: 'VPS Infrastructure',
-    description: 'A personal Linux server environment used to host services and practise Nginx, reverse proxies, SSH, SSL/TLS, deployment and monitoring.',
+    description: 'A personal Linux VPS used to host services and practise Nginx reverse proxies, SSH access, HTTPS deployment and monitoring.',
     technologies: ['Linux', 'Nginx', 'SSH', 'SSL/TLS', 'Monitoring', 'Reverse proxies', 'DNS', 'Deployment'],
     highlights: ['Service hosting', 'Reverse proxy management', 'Secure remote administration'],
     details: ['Used for practical Linux server management, hosting and deployment workflows.', 'Supports hands-on learning around Nginx, HTTPS, SSH access, monitoring and service operation.'],
     status: 'Personal infrastructure',
     accent: 'violet',
-    featured: true,
-    featuredOrder: 2,
+  },
+  {
+    title: 'Offline Heroes',
+    description:
+      'A fictional school project built with React and TypeScript: an interactive IT emergency plan with local storage, readiness scoring and a printable summary.',
+    technologies: ['React', 'TypeScript', 'Vite', 'React Router', 'localStorage'],
+    highlights: ['Ten-step Rescue Plan', 'Automatic Hero Score', 'Print-friendly summary'],
+    details: ['Built as a responsive React and TypeScript school project for a fictional IT company concept aimed at Belgian SMEs.', 'Includes required-field validation, localStorage persistence, example data, reset flow, demo contact and application forms, and accessible navigation and form states.'],
+    status: 'Public school project',
+    accent: 'blue',
+    github: 'https://github.com/tobypelfrene1993/offline-heroes',
+    demo: 'http://offlineheroes.tobypelfrene.be/',
+  },
+  {
+    title: 'IT1 Gaming Lab',
+    description:
+      'An in-progress physical Cisco networking lab documenting two IPv4 subnets, router and switch configuration, and duplicate-IP troubleshooting.',
+    technologies: ['Cisco IOS', 'IPv4', 'Routing', 'Switching', 'Troubleshooting'],
+    highlights: ['Physical Cisco equipment', 'IP addressing plan', 'Duplicate-IP troubleshooting'],
+    details: ['Documents a Cisco 1841 router, Catalyst switches and two IPv4 networks.', 'The repository marks configuration and connectivity checks as still in progress.'],
+    status: 'School lab in progress',
+    accent: 'blue',
+    github: 'https://github.com/tobypelfrene1993/it1-gaming-lab',
   },
   {
     title: 'Infrastructure Automation Platform',
@@ -107,6 +143,7 @@ export const projects: Project[] = [
     details: ['Focused on deployment, routing, service reliability and operational workflows.', 'Keeps the project positioned as infrastructure and automation practice.'],
     status: 'Private repository',
     accent: 'green',
+    visible: false,
     privateRepository: true,
   },
   {
@@ -118,24 +155,13 @@ export const projects: Project[] = [
     details: ['Separate from the larger platform work, this card represents smaller focused scripts and integrations.', 'Focused on predictable execution, clear debugging, logging and maintainable workflows.'],
     status: 'Personal automation work',
     accent: 'warm',
-  },
-  {
-    title: 'Offline Heroes',
-    description:
-      'A responsive React and TypeScript web application for a fictional IT emergency service. It includes an interactive ten-step Rescue Plan, automatic readiness scoring, local browser persistence, and a print-friendly summary. Developed as a fictional school project concept, not a commercial company.',
-    technologies: ['React', 'TypeScript', 'Vite', 'React Router', 'localStorage'],
-    highlights: ['Ten-step Rescue Plan', 'Automatic Hero Score', 'Print-friendly summary'],
-    details: ['Built as a responsive React and TypeScript school project for a fictional IT company concept aimed at Belgian SMEs.', 'Includes required-field validation, localStorage persistence, example data, reset flow, demo contact and application forms, and accessible navigation and form states.'],
-    status: 'Public school project',
-    accent: 'blue',
-    featured: true,
-    featuredOrder: 4,
-    github: 'https://github.com/tobypelfrene1993/offline-heroes',
-    demo: 'https://offlineheroes.tobypelfrene.be',
+    visible: false,
   },
 ];
 
-export const featuredProjects = projects
+export const visibleProjects = projects.filter((project) => project.visible !== false);
+
+export const featuredProjects = visibleProjects
   .filter((project) => project.featured)
   .sort((first, second) => (first.featuredOrder ?? 0) - (second.featuredOrder ?? 0));
 

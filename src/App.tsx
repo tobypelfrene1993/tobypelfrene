@@ -1,4 +1,4 @@
-import { contact, featuredProjects, projects, skillGroups } from './portfolioData';
+import { contact, featuredProjects, projects, skillGroups, visibleProjects } from './portfolioData';
 
 type TextLinkProps = {
   href: string;
@@ -40,9 +40,9 @@ function Hero() {
         <div className="hero-copy">
           <p className="intro-line">Portfolio</p>
           <h1>Toby Pelfrene</h1>
-          <p className="hero-title">Network & Systems Administration Student</p>
+          <p className="hero-title">Junior IT support, networks and systems administration.</p>
           <p className="hero-text">
-            I am building practical experience with Windows, Linux, Hyper-V, networking, VPS hosting and automation through projects, labs and training. I am open to junior opportunities in Network Administration, Systems Administration and Server Administration.
+            I’m Toby Pelfrene, a Network & Systems Administration student. I build and troubleshoot networks, Windows and Linux systems, and small automation tools through hands-on projects and labs.
           </p>
           <div className="hero-actions" aria-label="Primary actions">
             <TextLink className="primary-action" href="#projects">View my work</TextLink>
@@ -63,8 +63,8 @@ function Hero() {
             height="420"
           />
           <div className="hero-note">
-            <p>Open to junior opportunities in network, systems and server administration.</p>
-            <p>Interested in infrastructure, virtualization, storage, backup, data management and technical support.</p>
+            <p>Open to junior IT support, network administration, systems administration and infrastructure roles.</p>
+            <p>Interested in Windows, Linux, virtualization, VPS hosting, automation, backups and troubleshooting.</p>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ function ProjectRows({ items }: { items: typeof projects }) {
           <ProjectPreview title={project.title} technologies={project.technologies} />
           <div className="project-content">
             <div className="project-meta">
-              {project.privateRepository ? <span>Private repository</span> : project.status.includes('Personal') ? <span>{project.status}</span> : null}
+              {project.privateRepository ? <span>Private repository</span> : project.status === 'Live project' || project.status === 'School lab in progress' || project.status.includes('Personal') ? <span>{project.status}</span> : null}
             </div>
             <h3>{project.title}</h3>
             <p className="project-copy">{project.description}</p>
@@ -183,7 +183,7 @@ function AllProjectsPage() {
     <main id="top">
       <Nav />
       <ProjectsSection
-        items={projects}
+        items={visibleProjects}
         kicker="Projects"
         heading="All practical projects, labs and portfolio work."
         summary="A complete project overview covering subnetting, automation, hosting, service management and operational tooling."
@@ -203,13 +203,13 @@ function About() {
         </div>
         <div className="about-copy">
           <p>
-            My interest in IT started long before my formal training. Through my own projects, I have gained hands-on experience with networking, server administration, Windows and Microsoft 365, Linux, virtualization, VPS environments and small web applications.
+            I learn best by configuring real systems, finding what went wrong and documenting how I fixed it. My projects range from subnetting and Cisco lab work to PowerShell automation, Windows troubleshooting and Linux-hosted services.
           </p>
           <p>
-            I also use Python and AI-assisted tools to automate recurring tasks, connect services and make technical workflows more efficient. I enjoy understanding how different parts of an IT environment work together and troubleshooting problems step by step.
+            I use logs, tests and documentation to understand how systems behave, then make small changes and verify the result. I also use Python and PowerShell to automate recurring work.
           </p>
           <p>
-            I am currently strengthening this broad practical foundation through formal training in Network & Systems Administration, with the goal of growing into a systems and network administration role.
+            I am strengthening these skills through formal training in Network & Systems Administration, with the goal of growing into a junior IT support, systems, network or infrastructure role.
           </p>
           <div className="about-facts">
             <div>
@@ -290,9 +290,9 @@ function Contact() {
       <div className="contact-shell">
         <div>
           <p className="section-kicker">Contact</p>
-          <h2>Open to junior IT roles across support, systems, networks and infrastructure.</h2>
+          <h2>Open to junior IT support, systems and network roles.</h2>
           <p>
-            I am open to junior opportunities in IT support, systems administration, network administration and server infrastructure. I have practical experience with Windows, Linux, Microsoft 365, virtualization, VPS hosting, networking, automation, backups, monitoring and technical troubleshooting.
+            I’m looking for a junior role where I can support users, maintain systems and networks, troubleshoot technical issues and keep learning from experienced colleagues. You can reach me by email or connect with me on LinkedIn.
           </p>
         </div>
         <div className="contact-links" aria-label="Contact links">
