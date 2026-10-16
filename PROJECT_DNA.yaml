@@ -9,13 +9,13 @@ product:
   description: |
     This repository contains a React, TypeScript, TailwindCSS and Vite portfolio
     site for Network Administration, Systems Administration, Server
-    Administration, IT Infrastructure and IT Support opportunities. The
+    Administration and IT Infrastructure opportunities. The
     portfolio should communicate professionalism,
     trustworthiness, technical initiative, infrastructure interest and continuous
     learning.
   is:
     - professional_personal_portfolio
-    - dark_modern_interface
+    - light_minimal_interface
     - network_and_systems_admin_focused
     - evidence_backed_delivery
     - deployable_static_frontend

@@ -1,5 +1,5 @@
 export const contact = {
-  email: 'hello@tobypelfrene.be',
+  email: 'tobypelfrene@protonmail.com',
   linkedin: 'https://www.linkedin.com/in/toby-pelfrene-1a9365323/',
   github: 'https://github.com/tobypelfrene1993',
 };
@@ -15,26 +15,26 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Networking',
     accent: 'networking',
-    summary: 'TCP/IP, subnetting, VLANs, switching, routing and network troubleshooting.',
-    items: ['TCP/IP', 'subnetting', 'VLANs', 'switching', 'routing and network troubleshooting'],
+    summary: 'Networking, addressing, switching, routing and wireless technologies.',
+    items: ['TCP/IP', 'Subnetting', 'VLANs', 'Routing', 'Switching', 'NAT', 'Cisco IOS', 'Wi-Fi'],
   },
   {
-    title: 'Systems & Virtualization',
+    title: 'Systems & Microsoft',
     accent: 'systems',
-    summary: 'Windows, Windows Server, Active Directory, Linux, Hyper-V and Microsoft 365.',
-    items: ['Windows', 'Windows Server', 'Active Directory', 'Linux', 'Hyper-V and Microsoft 365'],
+    summary: 'Windows administration, Microsoft services and IT support.',
+    items: ['Windows 11', 'Windows Server 2019 / 2022', 'Active Directory', 'DNS / DHCP', 'Group Policy', 'Microsoft 365', 'Exchange Server', 'Microsoft Intune', 'MECM / Configuration Manager', 'Hardware & IT Support'],
   },
   {
-    title: 'Infrastructure',
+    title: 'Infrastructure & Cloud',
     accent: 'infrastructure',
-    summary: 'VPS hosting, Nginx, SSH, DNS, SSL/TLS, backups and monitoring.',
-    items: ['VPS hosting', 'Nginx', 'SSH', 'DNS', 'SSL/TLS', 'backups and monitoring'],
+    summary: 'Virtualization, cloud platforms, Linux hosting and recovery.',
+    items: ['Hyper-V', 'VMware', 'Linux', 'Microsoft Azure', 'Azure Virtual Desktop', 'VPS Hosting', 'Docker', 'NGINX', 'Backup & Recovery'],
   },
   {
-    title: 'Automation & Tooling',
+    title: 'Automation & IT Operations',
     accent: 'automation',
-    summary: 'PowerShell, Python, REST APIs, Git, scheduled tasks and AI-assisted automation.',
-    items: ['PowerShell', 'Python', 'REST APIs', 'Git', 'scheduled tasks and AI-assisted automation'],
+    summary: 'Automation, development, security and IT service practices.',
+    items: ['PowerShell', 'Python', 'Git / GitHub', 'React / TypeScript', 'REST APIs', 'AI-assisted Automation', 'IT Security', 'Troubleshooting', 'IT Service Management', 'GDPR Awareness'],
   },
 ];
 
@@ -49,6 +49,12 @@ type Project = {
   featured?: boolean;
   featuredOrder?: number;
   visible?: boolean;
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imagePosition?: string;
+  linkNote?: string;
   github?: string;
   demo?: string;
   privateRepository?: boolean;
@@ -71,7 +77,11 @@ export const projects: Project[] = [
     status: 'Public project',
     accent: 'blue',
     featured: true,
-    featuredOrder: 1,
+    featuredOrder: 3,
+    image: '/images/subnet-master-preview.png',
+    imageAlt: 'Minimal network planning illustration for the Subnet Master project',
+    imageWidth: 1672,
+    imageHeight: 941,
     github: 'https://github.com/tobypelfrene1993/subnet-master-web',
     demo: 'http://subnetmaster.tobypelfrene.be/',
   },
@@ -84,8 +94,7 @@ export const projects: Project[] = [
     details: ['Uses read-only validation and dry-run testing before hardware-write paths are used.', 'Includes explicit safeguards, state recovery, logging and fail-closed validation for selected Dell hardware.'],
     status: 'Public repository',
     accent: 'teal',
-    featured: true,
-    featuredOrder: 2,
+    featured: false,
     github: 'https://github.com/tobypelfrene1993/dell-fan-controller',
   },
   {
@@ -98,18 +107,26 @@ export const projects: Project[] = [
     status: 'Live project',
     accent: 'green',
     featured: true,
-    featuredOrder: 3,
+    featuredOrder: 1,
+    image: '/projects/mcservice-evergem.webp',
+    imageAlt: 'Screenshot of the MC Service Evergem website homepage',
     github: 'https://github.com/tobypelfrene1993/mcservice-evergem-v2',
     demo: 'https://mcservice-evergem.be',
   },
   {
     title: 'VPS Infrastructure',
-    description: 'A personal Linux VPS used to host services and practise Nginx reverse proxies, SSH access, HTTPS deployment and monitoring.',
-    technologies: ['Linux', 'Nginx', 'SSH', 'SSL/TLS', 'Monitoring', 'Reverse proxies', 'DNS', 'Deployment'],
-    highlights: ['Service hosting', 'Reverse proxy management', 'Secure remote administration'],
-    details: ['Used for practical Linux server management, hosting and deployment workflows.', 'Supports hands-on learning around Nginx, HTTPS, SSH access, monitoring and service operation.'],
+    description: 'I deploy and maintain services on a personal Linux VPS, managing SSH access, Docker containers, NGINX, DNS, HTTPS and server troubleshooting.',
+    technologies: ['Linux', 'Docker', 'SSH', 'NGINX', 'DNS', 'HTTPS', 'VPS Hosting', 'Service Deployment', 'Monitoring'],
+    highlights: ['Linux VPS hosting and service deployment', 'Docker containers and NGINX reverse proxies', 'SSH, DNS and HTTPS configuration'],
+    details: ['Deploys and maintains services on a personal Linux VPS, including Docker containers and NGINX web hosting and reverse proxies.', 'Manages SSH access, DNS and HTTPS configuration and troubleshoots service issues.'],
     status: 'Personal infrastructure',
     accent: 'violet',
+    featured: true,
+    featuredOrder: 2,
+    image: '/images/vps-infrastructure-preview.webp',
+    imageAlt: 'Minimal illustration of a Linux VPS server and SSH terminal.',
+    imagePosition: 'center 43%',
+    linkNote: 'Private infrastructure · No public demo',
   },
   {
     title: 'Offline Heroes',

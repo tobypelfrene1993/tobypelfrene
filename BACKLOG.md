@@ -12,7 +12,6 @@ Reference these IDs from `NEXT_ACTIONS.md`.
 ## NOW
 
 - [BL-005] Confirm public contact and identity details.
-- [BL-006] Replace CV placeholder with final CV artifact.
 - [BL-007] Deploy portfolio to VPS and verify HTTPS runtime.
 
 ## NEXT
@@ -29,6 +28,6 @@ Reference these IDs from `NEXT_ACTIONS.md`.
 ## WATCHLIST
 
 - Unverified contact details or social profile URLs.
-- Treating the CV placeholder as a final approved CV.
+- Accidentally publishing private contact details when updating the public CV.
 - Premature operating-mode transition before VPS deployment evidence exists.
 - Letting Future Finance dominate the portfolio positioning.

@@ -1,336 +1,127 @@
 import { contact, featuredProjects, projects, skillGroups, visibleProjects } from './portfolioData';
 
-type TextLinkProps = {
-  href: string;
-  children: string;
-  download?: boolean;
-  external?: boolean;
-  className?: string;
-};
+type Project = (typeof projects)[number];
 
-function TextLink({ href, children, download, external, className = '' }: TextLinkProps) {
-  return (
-    <a className={className} href={href} download={download} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>
-      {children}
-    </a>
-  );
+function Icon({ kind }: { kind: 'arrow' | 'external' | 'download' }) {
+  const path = {
+    arrow: <path d="M3 10h13m-5-5 5 5-5 5" />,
+    external: <path d="M6 14 14 6M7 6h7v7" />,
+    download: <path d="M10 2v10m-4-4 4 4 4-4M3 14v3h14v-3" />,
+  };
+  return <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">{path[kind]}</svg>;
 }
 
-function Nav({ isHome = false }: { isHome?: boolean }) {
-  const homePrefix = isHome ? '' : '/';
-
-  return (
-    <header className="site-header">
-      <a className="brand-link" href={isHome ? '#top' : '/'} aria-label="Toby Pelfrene home">Toby Pelfrene</a>
-      <nav className="site-nav" aria-label="Primary navigation">
-        <a href={`${homePrefix}#about`}>About</a>
-        <a href={`${homePrefix}#projects`}>Work</a>
-        <a href={`${homePrefix}#skills`}>Skills</a>
-        <a href={`${homePrefix}#contact`}>Contact</a>
-      </nav>
-    </header>
-  );
+function Header({ isHome }: { isHome: boolean }) {
+  const prefix = isHome ? '' : '/';
+  return <header className="site-header" id="top"><div className="container header-inner">
+    <a className="brand-link" href={isHome ? '#top' : '/'} aria-label="Toby Pelfrene, home">Toby Pelfrene<span>.</span></a>
+    <nav className="site-nav" aria-label="Primary navigation">
+      <a href={isHome ? '#projects' : '/projects'} aria-current={isHome ? undefined : 'page'}>Projects</a>
+      <a href={`${prefix}#skills`}>Skills</a><a href={`${prefix}#about`}>About</a><a href={`${prefix}#contact`}>Contact</a>
+    </nav>
+    <a className="button button-dark nav-cv" href="/Toby-Pelfrene-CV.pdf" download><Icon kind="download" />Download CV</a>
+  </div></header>;
 }
 
 function Hero() {
-  return (
-    <section className="hero-section" id="top">
-      <Nav isHome />
-      <div className="hero-layout">
-        <div className="hero-copy">
-          <p className="intro-line">Portfolio</p>
-          <h1>Toby Pelfrene</h1>
-          <p className="hero-title">Junior IT support, networks and systems administration.</p>
-          <p className="hero-text">
-            I’m Toby Pelfrene, a Network & Systems Administration student. I build and troubleshoot networks, Windows and Linux systems, and small automation tools through hands-on projects and labs.
-          </p>
-          <div className="hero-actions" aria-label="Primary actions">
-            <TextLink className="primary-action" href="#projects">View my work</TextLink>
-            <TextLink className="secondary-action" href="#contact">Contact me</TextLink>
-          </div>
-          <div className="quiet-links" aria-label="Secondary links">
-            <TextLink href={contact.linkedin} external>LinkedIn</TextLink>
-            <TextLink href={contact.github} external>GitHub</TextLink>
-            <TextLink href="/Toby-Pelfrene-CV.html" download>Download CV</TextLink>
-          </div>
-        </div>
-        <div className="hero-portrait-wrap">
-          <img
-            className="hero-portrait"
-            src="/toby-pelfrene-profile.jpg"
-            alt="Toby Pelfrene"
-            width="420"
-            height="420"
-          />
-          <div className="hero-note">
-            <p>Open to junior IT support, network administration, systems administration and infrastructure roles.</p>
-            <p>Interested in Windows, Linux, virtualization, VPS hosting, automation, backups and troubleshooting.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ProjectPreview({ title, technologies }: { title: string; technologies: string[] }) {
-  return (
-    <div className="project-preview" aria-hidden="true">
-      <div className="preview-window">
-        <div className="preview-bar">
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className="preview-body">
-          <p>{title}</p>
-          <div className="preview-lines">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="preview-stack">
-            {technologies.slice(0, 3).map((tech) => (
-              <span key={tech}>{tech}</span>
-            ))}
-          </div>
-        </div>
+  return <section className="hero-section" aria-labelledby="hero-title"><div className="container hero-layout">
+    <div className="hero-copy">
+      <p className="eyebrow">NETWORKS · SYSTEMS · INFRASTRUCTURE</p>
+      <h1 id="hero-title">Hey, I'm Toby.</h1>
+      <p className="hero-subtitle">I build, manage and troubleshoot IT systems.</p>
+      <p className="hero-description">Technology has always been a big part of my life. Through personal projects and hands-on labs, I work with networks, Windows Server, Linux environments, virtualization and automation. I enjoy solving technical challenges, understanding how systems work and finding ways to improve them.</p>
+      <p className="hero-position">Open to junior opportunities in network administration, systems administration, server management and IT infrastructure.</p>
+      <div className="hero-actions">
+        <a className="button button-dark" href="#projects">View my projects <Icon kind="arrow" /></a>
+        <a className="button button-outline" href="/Toby-Pelfrene-CV.pdf" download><Icon kind="download" />Download CV</a>
       </div>
     </div>
-  );
+    <div className="hero-photo-wrap"><img className="hero-photo" src="/toby-pelfrene-profile.jpg" alt="Portrait of Toby Pelfrene" width="400" height="400" fetchPriority="high" /></div>
+  </div></section>;
 }
 
-function ProjectRows({ items }: { items: typeof projects }) {
-  return (
-    <div className="project-list">
-      {items.map((project, index) => (
-        <article className="project-row" data-reverse={index % 2 === 1 ? 'true' : 'false'} key={project.title}>
-          <ProjectPreview title={project.title} technologies={project.technologies} />
-          <div className="project-content">
-            <div className="project-meta">
-              {project.privateRepository ? <span>Private repository</span> : project.status === 'Live project' || project.status === 'School lab in progress' || project.status.includes('Personal') ? <span>{project.status}</span> : null}
-            </div>
-            <h3>{project.title}</h3>
-            <p className="project-copy">{project.description}</p>
-            <ul className="project-tech-plain" aria-label={`${project.title} technologies`}>
-              {project.technologies.slice(0, 5).map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
-            <div className="project-links">
-              {project.github && !project.privateRepository ? (
-                <TextLink href={project.github} external>GitHub</TextLink>
-              ) : null}
-              {project.demo ? (
-                <TextLink href={project.demo} external={project.demo.startsWith('http')}>Live demo</TextLink>
-              ) : null}
-              {project.privateRepository ? <span>Repository kept private</span> : null}
-            </div>
-          </div>
-        </article>
-      ))}
+// These are deliberately typographic fallbacks, not screenshots of the projects.
+const projectVisuals: Record<string, { label: string; mark: string }> = {
+  'Subnet Master': { label: 'NETWORK PLANNING', mark: '192.168 / 24' },
+  'Dell Fan Controller': { label: 'SYSTEM AUTOMATION', mark: 'PS >_' },
+  'MC Service Evergem': { label: 'WEB & HOSTING', mark: 'MC SERVICE' },
+  'VPS Infrastructure': { label: 'SERVER OPERATIONS', mark: 'VPS / SSH' },
+  'Offline Heroes': { label: 'SCHOOL PROJECT', mark: 'RESCUE PLAN' },
+  'IT1 Gaming Lab': { label: 'CISCO LAB', mark: 'LAN / ROUTING' },
+};
+
+function ProjectCard({ project }: { project: Project }) {
+  const visual = projectVisuals[project.title];
+  return <article className="project-card">
+    {project.image ? (
+      <div className="project-visual project-visual-image"><img src={project.image} alt={project.imageAlt ?? `Screenshot of ${project.title}`} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 675} loading="lazy" decoding="async" style={project.imagePosition ? { objectPosition: project.imagePosition } : undefined} /></div>
+    ) : (
+      <div className={`project-visual visual-${project.accent}`} aria-hidden="true"><span className="visual-label">{visual?.label ?? 'PROJECT'}</span><span className="visual-mark">{visual?.mark ?? project.title}</span></div>
+    )}
+    <div className="project-card-body">
+      <div className="project-title-line"><h3>{project.title}</h3><span className="project-status">{project.status}</span></div>
+      <p>{project.description}</p>
+      <ul className="project-tech" aria-label={`${project.title} technologies`}>{project.technologies.slice(0, 3).map((tech) => <li key={tech}>{tech}</li>)}</ul>
+      <div className="project-links">
+        {project.github && !project.privateRepository && <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub <span className="sr-only">for {project.title}</span><Icon kind="external" /></a>}
+        {project.demo && <a href={project.demo} target="_blank" rel="noopener noreferrer">Live demo <span className="sr-only">of {project.title}</span><Icon kind="external" /></a>}
+        {!project.github && !project.demo && <span>{project.linkNote ?? 'No public link available'}</span>}
+      </div>
     </div>
-  );
+  </article>;
 }
 
-function ProjectsSection({
-  items,
-  kicker,
-  heading,
-  summary,
-  showAllLink = false,
-}: {
-  items: typeof projects;
-  kicker: string;
-  heading: string;
-  summary: string;
-  showAllLink?: boolean;
-}) {
-  return (
-    <section className="section work-section" id="projects">
-      <div className="section-heading split-heading">
-        <p className="section-kicker">{kicker}</p>
-        <h2>{heading}</h2>
-        <p>
-          {summary}
-        </p>
-      </div>
-
-      <ProjectRows items={items} />
-
-      {showAllLink ? (
-        <div className="hero-actions">
-          <TextLink className="secondary-action" href="/projects">View all projects →</TextLink>
-        </div>
-      ) : null}
-    </section>
-  );
+function FeaturedWork() {
+  return <section className="section featured-section" id="projects" aria-labelledby="featured-title"><div className="container">
+    <div className="section-topline"><div><p className="eyebrow">Featured projects</p><h2 id="featured-title">Selected work.</h2></div><a className="text-link all-projects-link" href="/projects">View all projects <Icon kind="arrow" /></a></div>
+    <div className="project-grid featured-grid">{featuredProjects.map((project) => <ProjectCard project={project} key={project.title} />)}</div>
+  </div></section>;
 }
 
-function FeaturedProjects() {
-  return (
-    <ProjectsSection
-      items={featuredProjects}
-      kicker="Featured Projects"
-      heading="Practical projects, built while learning real infrastructure work."
-      summary="A focused selection of projects around subnetting, automation, hosting, service management and operational tooling."
-      showAllLink
-    />
-  );
-}
-
-function AllProjectsPage() {
-  return (
-    <main id="top">
-      <Nav />
-      <ProjectsSection
-        items={visibleProjects}
-        kicker="Projects"
-        heading="All practical projects, labs and portfolio work."
-        summary="A complete project overview covering subnetting, automation, hosting, service management and operational tooling."
-      />
-      <Footer />
-    </main>
-  );
-}
-
-function About() {
-  return (
-    <section className="section about-section" id="about">
-      <div className="about-grid">
-        <div className="section-heading">
-          <p className="section-kicker">About</p>
-          <h2>I learn by building and fixing real systems.</h2>
-        </div>
-        <div className="about-copy">
-          <p>
-            I learn best by configuring real systems, finding what went wrong and documenting how I fixed it. My projects range from subnetting and Cisco lab work to PowerShell automation, Windows troubleshooting and Linux-hosted services.
-          </p>
-          <p>
-            I use logs, tests and documentation to understand how systems behave, then make small changes and verify the result. I also use Python and PowerShell to automate recurring work.
-          </p>
-          <p>
-            I am strengthening these skills through formal training in Network & Systems Administration, with the goal of growing into a junior IT support, systems, network or infrastructure role.
-          </p>
-          <div className="about-facts">
-            <div>
-              <strong>Education</strong>
-              <span>Network & Systems Administration Programme — In progress</span>
-            </div>
-            <div>
-              <strong>Hands-on experience</strong>
-              <span>Networking, server administration, Windows and Microsoft 365, Linux, virtualization, VPS environments, small web applications, Python scripting, infrastructure monitoring and AI-assisted automation.</span>
-            </div>
-            <div>
-              <strong>Current development</strong>
-              <span>Cisco networking, Windows Server, storage, backup and recovery, infrastructure security and Microsoft fundamentals.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+const skillIcons = ['◎', '▤', '◇', '⚙'];
+const skillDisplay = skillGroups.map((group, index) => ({
+  title: group.title,
+  icon: skillIcons[index],
+  copy: group.items.join(' · '),
+}));
 
 function Skills() {
-  return (
-    <section className="section skills-section" id="skills">
-      <div className="section-heading">
-        <p className="section-kicker">Skills</p>
-        <h2>Technical skills I apply in projects and labs.</h2>
-      </div>
-      <div className="skill-list">
-        {skillGroups.map((group) => (
-          <article className="skill-line" key={group.title}>
-            <h3>{group.title.replace('Automation and Development', 'Automation')}</h3>
-            <p>{group.items.slice(0, 6).join(', ')}.</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
+  return <section className="section skills-section" id="skills" aria-labelledby="skills-title"><div className="container">
+    <p className="eyebrow">Technical skills</p><h2 id="skills-title">Core expertise.</h2>
+    <div className="skills-grid">{skillDisplay.map((skill) => <article className="skill-item" key={skill.title}><span className="skill-icon" aria-hidden="true">{skill.icon}</span><h3>{skill.title}</h3><p>{skill.copy}</p></article>)}</div>
+  </div></section>;
 }
 
-const workPrinciples = [
-  {
-    title: 'Build, test and validate',
-    text: 'I work with real configurations, test changes in small steps and verify the result before moving forward.',
-  },
-  {
-    title: 'Document for repeatability',
-    text: 'I document configurations, decisions and troubleshooting steps so the work remains clear, reproducible and maintainable.',
-  },
-  {
-    title: 'Troubleshoot methodically',
-    text: 'I isolate one variable at a time, use logs and test results as evidence, and avoid making assumptions without verification.',
-  },
+const principles = [
+  { title: 'Build & test', text: 'Learn by doing and verify changes on real systems.' },
+  { title: 'Troubleshoot methodically', text: 'Find the root cause and solve problems step by step.' },
+  { title: 'Document & improve', text: 'Keep clear notes and use what I learn to improve.' },
 ];
 
-function HowIWork() {
-  return (
-    <section className="section work-method-section" id="how-i-work">
-      <div className="section-heading">
-        <p className="section-kicker">How I Work</p>
-        <h2>How I approach technical problems.</h2>
-      </div>
-      <div className="principle-list">
-        {workPrinciples.map((principle) => (
-          <article className="principle" key={principle.title}>
-            <h3>{principle.title}</h3>
-            <p>{principle.text}</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
+function About() {
+  return <section className="section about-section" id="about" aria-labelledby="about-title"><div className="container about-grid">
+    <div className="about-copy"><p className="eyebrow">About me</p><h2 id="about-title">Curious about technology.</h2><p>I’ve always had a strong interest in technology and enjoy understanding how systems work. I like building, configuring and troubleshooting IT environments, from networks and Windows Server to Linux, virtualization and automation.</p><p>Network &amp; Systems Administration — IT1.be (2026 – Present). Full-time technical training covering networking, Windows and Linux administration, virtualization, Microsoft 365, cloud infrastructure, cybersecurity, automation and IT support.</p></div>
+    <div className="principles" aria-label="How I work">{principles.map((principle, index) => <div className="principle" key={principle.title}><span className="principle-mark" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><h3>{principle.title}</h3><p>{principle.text}</p></div></div>)}</div>
+  </div></section>;
 }
 
 function Contact() {
-  return (
-    <section className="section contact-section" id="contact">
-      <div className="contact-shell">
-        <div>
-          <p className="section-kicker">Contact</p>
-          <h2>Open to junior IT support, systems and network roles.</h2>
-          <p>
-            I’m looking for a junior role where I can support users, maintain systems and networks, troubleshoot technical issues and keep learning from experienced colleagues. You can reach me by email or connect with me on LinkedIn.
-          </p>
-        </div>
-        <div className="contact-links" aria-label="Contact links">
-          <TextLink href={`mailto:${contact.email}`}>{contact.email}</TextLink>
-          <TextLink href={contact.linkedin} external>LinkedIn</TextLink>
-          <TextLink href={contact.github} external>GitHub</TextLink>
-          <TextLink href="/Toby-Pelfrene-CV.html" download>Download CV</TextLink>
-        </div>
-      </div>
-    </section>
-  );
+  return <section className="section contact-section" id="contact" aria-labelledby="contact-title"><div className="container contact-panel">
+    <div className="contact-copy"><p className="eyebrow">Get in touch</p><h2 id="contact-title">Let’s connect.</h2><p>Open to junior opportunities in network administration, systems administration, server management and IT infrastructure.</p></div>
+    <div className="contact-links"><a className="email-link" href={`mailto:${contact.email}`}><span>Email</span><strong>{contact.email}</strong></a><a href={contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <Icon kind="external" /></a><a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub <Icon kind="external" /></a><a className="button button-dark" href="/Toby-Pelfrene-CV.pdf" download><Icon kind="download" />Download CV</a></div>
+  </div></section>;
 }
 
 function Footer() {
-  return (
-    <footer className="site-footer">
-      <p>Toby Pelfrene</p>
-      <p>Network & Systems Administration Student</p>
-    </footer>
-  );
+  return <footer className="site-footer"><div className="container footer-inner"><span className="footer-brand">Toby Pelfrene<span>.</span></span><nav aria-label="Footer navigation"><a href="/projects">Projects</a><a href="/#skills">Skills</a><a href="/#about">About</a><a href="/#contact">Contact</a></nav></div></footer>;
+}
+
+function ProjectsPage() {
+  return <><Header isHome={false} /><main><section className="section projects-page" aria-labelledby="projects-title"><div className="container"><div className="projects-intro"><p className="eyebrow">Projects &amp; labs</p><h1 id="projects-title">Practical work, built to learn.</h1><p>A selection of tools, websites and infrastructure projects where I put networking, systems and automation skills into practice.</p></div><div className="project-grid all-projects-grid">{visibleProjects.map((project) => <ProjectCard project={project} key={project.title} />)}</div></div></section></main><Footer /></>;
 }
 
 export default function App() {
   const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
-
-  if (currentPath === '/projects') {
-    return <AllProjectsPage />;
-  }
-
-  return (
-    <main>
-      <Hero />
-      <FeaturedProjects />
-      <About />
-      <Skills />
-      <HowIWork />
-      <Contact />
-      <Footer />
-    </main>
-  );
+  if (currentPath === '/projects') return <ProjectsPage />;
+  return <><Header isHome /><main><Hero /><FeaturedWork /><Skills /><About /><Contact /></main><Footer /></>;
 }

@@ -492,6 +492,7 @@
   Notes: No deploy, commit, push, branch, dependency install or Git remote change was performed.
 ```
 
+
 ## EV-2026-07-01-004: Wide horizontal project banner verification
 
 ```yaml
@@ -782,4 +783,224 @@
   Type: build-and-source-verification
   as_of: 2026-07-01T23:29:44+02:00
   Notes: No deploy, commit, push, branch, dependency install or Git remote change was performed.
+```
+
+## EV-2026-10-15-001: Light Tech 2.0 local redesign verification
+
+```yaml
+- ID: EV-2026-10-15-001
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\runtime-identity.txt
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\build.log
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\home-768-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\home-375-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\projects-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\light-tech-2026-10-15\projects-375-cdp.png
+  Title: Light Tech 2.0 local preview and responsive audit
+  Source/System: production_build | local_vite_preview | edge_devtools
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+  Action: Rebuilt and inspected the redesign at exact 1440, 768 and 375px viewports.
+  Shows:
+    - Three featured project cards on the homepage and six visible cards on /projects
+    - Neither intentionally hidden project title appears on either route
+    - No horizontal overflow at the tested viewport widths
+    - Both routes, profile JPEG and placeholder HTML CV returned HTTP 200 locally; refreshing /projects kept all six visible cards
+    - The homepage mailto link uses tobypelfrene@protonmail.com
+  Proves: Local rebuilt preview behavior only; public production, external links and approved PDF remain unverified.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-15
+  Notes: Source checkout is main at c1338841fd64038daeb642e50c699b8d70d5b317 with uncommitted redesign. Vite preview listener PID 13308 served port 4174. A separate pre-existing listener on 5173 was not used.
+```
+
+## EV-2026-10-15-002: Skills and education content verification
+
+```yaml
+- ID: EV-2026-10-15-002
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\skills-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\skills-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\skills-2026-10-15\home-375-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\skills-2026-10-15\projects-1440-cdp.png
+  Title: Full curriculum skills and education in the local Light Tech 2.0 preview
+  Source/System: production_build | local_vite_preview | edge_devtools | source_data_check
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+  Action: Updated the four existing skill groups and the existing About education paragraph, then rebuilt and captured the local preview.
+  Shows:
+    - Four skill groups contain the 37 requested technology items and no skill status labels
+    - About displays Network & Systems Administration — IT1.be (2026 – Present) and the requested training description
+    - Three featured projects retain their order; six projects remain visible on /projects, including Dell Fan Controller
+    - Two intentionally hidden projects remain absent from both routes
+    - No horizontal overflow was measured at 1440, 768 and 375px; desktop and mobile screenshots show readable skill text
+  Proves: Rebuilt local preview behavior only; production deployment was not performed.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-15
+  Notes: Source checkout is main at c1338841fd64038daeb642e50c699b8d70d5b317 with pre-existing uncommitted changes. Vite preview listener PID 13308 served port 4174. A separate listener on 5173 was not used.
+```
+
+## EV-2026-10-15-003: MC Service Evergem live site screenshot
+
+```yaml
+- ID: EV-2026-10-15-003
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\mcservice-screenshots\mcservice-evergem-desktop-1440x900-2x-20261015.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\mcservice-screenshots\mcservice-evergem-project-preview-1200x675-20261015.webp
+  Title: Real MC Service Evergem homepage captures for portfolio review
+  Source/System: live_https_site | Edge_DevTools | Pillow_WebP_export
+  Route/Page:
+    - https://mcservice-evergem.be/
+  Action: Captured the live homepage at 1440x900 CSS pixels with device pixel ratio 2 and made a 16:9 WebP preview from a second 1200x675 browser capture.
+  Shows:
+    - Real MC Service logo, headline, orange accents and mechanical hero image
+    - Loaded fonts and visible images before capture
+    - PNG at 2880x1800 and WebP at 1200x675, visually inspected
+  Proves: Images depict the live site as seen in the browser on 2026-10-15. They are not integrated into the portfolio.
+  Type: live-browser-screenshot
+  as_of: 2026-10-15
+  Notes: Edge headless served the public HTTPS URL. The first temporary browser profile raised a Windows cache-lock warning during cleanup after a successful capture; saved files were validated. No MC Service or portfolio site changes were made.
+```
+
+## EV-2026-10-15-004: MC Service project image integration
+
+```yaml
+- ID: EV-2026-10-15-004
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\project-images-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\project-images-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\project-images-2026-10-15\home-375-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\project-images-2026-10-15\projects-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\project-images-2026-10-15\projects-375-cdp.png
+  Title: Real MC Service screenshot in existing project cards
+  Source/System: production_build | local_vite_preview | edge_devtools
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+  Action: Added the existing optimized WebP as an optional project image, rebuilt, scrolled to decode the lazy image, and captured both routes at desktop and mobile widths.
+  Shows:
+    - MC Service Evergem renders the same real screenshot on both routes with descriptive alt text
+    - Other cards retain their typographic previews
+    - Project visibility and order remain three featured, six visible, and two hidden
+    - No horizontal overflow at 1440, 768 or 375px; image zone height remains 165px desktop and 160px mobile
+  Proves: Rebuilt local preview behavior only; no public portfolio deployment was performed.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-15
+  Notes: Source checkout is main at c1338841fd64038daeb642e50c699b8d70d5b317 with pre-existing uncommitted changes. Vite preview listener PID 13308 served port 4174. A separate listener on 5173 was not used.
+```
+## EV-2026-10-15-005: VPS Infrastructure card update
+
+```yaml
+- ID: EV-2026-10-15-005
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\vps-infrastructure-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\vps-infrastructure-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\vps-infrastructure-2026-10-15\home-375-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\vps-infrastructure-2026-10-15\projects-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\vps-infrastructure-2026-10-15\projects-375-cdp.png
+  Title: VPS Infrastructure image and content in the existing cards
+  Source/System: user_supplied_png | local_webp_conversion | production_build | local_vite_preview | edge_devtools
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+  Action: Converted the provided PNG to the requested WebP path, updated only the VPS project record and its no-link note, then rebuilt and captured both routes.
+  Shows:
+    - VPS and MC Service images decode on both routes with descriptive alt text
+    - VPS card displays the supplied description, Linux/Docker/SSH tags and non-clickable private infrastructure note
+    - Three featured projects, six visible projects and two hidden projects retain their selection and order
+    - No horizontal overflow at 1440, 768 or 375px; image zone height remains 165px desktop and 160px mobile
+  Proves: Rebuilt local preview behavior only; no public portfolio deployment was performed.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-15
+  Notes: The requested WebP path was not found before this slice. The attached PNG supplied by the user was converted without generating new visual content. Docker use is reported by the user in the task brief and was not independently verified against a live VPS. Source checkout is main at c1338841fd64038daeb642e50c699b8d70d5b317 with pre-existing uncommitted changes. Vite preview listener PID 13308 served port 4174.
+```
+
+## EV-2026-10-15-006: Subnet Master project image integration
+
+```yaml
+- ID: EV-2026-10-15-006
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\subnet-master-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\subnet-master-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\subnet-master-2026-10-15\home-375-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\subnet-master-2026-10-15\projects-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\subnet-master-2026-10-15\projects-375-cdp.png
+  Title: Subnet Master image in the existing project cards
+  Source/System: user_supplied_png | production_build | local_vite_preview | edge_devtools
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+  Action: Copied the exact attached PNG to the requested public image path, added its image metadata to the Subnet Master record, rebuilt and captured both routes.
+  Shows:
+    - Subnet Master image decodes on both routes at natural resolution 1672x941 with descriptive alt text
+    - Other project images, project records, selection and order remain unchanged
+    - Three featured projects, six visible projects and two hidden projects retain their selection and order
+    - No horizontal overflow at 1440, 768 or 375px; image zone height remains 165px desktop and 160px mobile
+  Proves: Rebuilt local preview behavior only; no public portfolio deployment was performed.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-15
+  Notes: The requested PNG path was absent before this slice. The attached source PNG was copied byte-for-byte (SHA256 2D3ECBC6A865ADDD2F323163CB54E08586F99B972B48908485A375643F778F91). Source checkout is main at c1338841fd64038daeb642e50c699b8d70d5b317 with pre-existing uncommitted changes. Vite preview listener PID 13308 served port 4174.
+```
+
+## EV-2026-10-15-007: Hero text and professional positioning
+
+```yaml
+- ID: EV-2026-10-15-007
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\hero-positioning-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\hero-positioning-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\hero-positioning-2026-10-15\home-375-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\hero-positioning-2026-10-15\projects-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\hero-positioning-2026-10-15\projects-375-cdp.png
+  Title: Revised Hero text and infrastructure-focused job positioning
+  Source/System: production_build | local_vite_preview | edge_devtools
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+  Action: Updated only Hero, Contact, CV objective and metadata wording; retained IT support in education and technical skills.
+  Shows:
+    - Exact requested Hero text and matching Contact opportunity text appear in the browser
+    - SEO, Open Graph, Twitter and structured-data descriptions no longer position IT support as a sought role
+    - Three featured projects, six visible projects and two hidden projects retain their selection and order
+    - No horizontal overflow at 1440, 768 or 375px; all project images decode for screenshots
+  Proves: Rebuilt local preview behavior only; no public portfolio deployment was performed.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-15
+  Notes: Source checkout is main at c1338841fd64038daeb642e50c699b8d70d5b317 with pre-existing uncommitted changes. Vite preview listener PID 13308 served port 4174. A separate listener on port 5173 was not used. The downloadable HTML CV remains a placeholder pending final approved PDF.
+```
+
+## EV-2026-10-15-008: Public CV PDF integration
+
+```yaml
+- ID: EV-2026-10-15-008
+  File:
+    - C:\Project Toby\tobypelfrene\public\Toby-Pelfrene-CV.pdf
+    - C:\Project Toby\tobypelfrene\docs\evidence\cv-integration-2026-10-15\pdf-validation.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\cv-integration-2026-10-15\public-cv.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\cv-integration-2026-10-15\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\cv-integration-2026-10-15\home-1440-cdp.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\cv-integration-2026-10-15\home-375-cdp.png
+  Title: Separate public CV with private contact rows removed and verified downloads
+  Source/System: user_supplied_pdf | pypdf | poppler | production_build | local_vite_preview | edge_devtools
+  Route/Page:
+    - http://127.0.0.1:4174/
+    - http://127.0.0.1:4174/projects
+    - http://127.0.0.1:4174/Toby-Pelfrene-CV.pdf
+    - http://127.0.0.1:4174/Toby-Pelfrene-CV.html
+  Action: Removed the two private contact text operators into a separate public PDF, excluded source metadata and embedded attachments, updated the three download hrefs, and replaced the HTML placeholder with a PDF link.
+  Shows:
+    - Source SHA256 unchanged; all other extracted text, images and four contact links retained
+    - Public PDF has one A4 page, 97003 bytes, sanitized metadata, no embedded attachments or XMP
+    - Rendered pixels are identical outside the two removed contact rows
+    - All three buttons download byte-identical PDFs in desktop and mobile browser checks
+    - Public file, dist file and HTTP 200 application/pdf response are byte-identical
+    - Website screenshots are pixel-identical to the preceding Hero slice on both routes at desktop and mobile widths
+    - Project selection and visibility remain unchanged with no horizontal overflow
+  Proves: Rebuilt local preview and public PDF contents only; no production deployment occurred.
+  Type: pdf-privacy-render-download-verification
+  as_of: 2026-10-15
+  Notes: The source explicitly attached by the user was found on Desktop; the path inside the pasted brief was absent. The original stays outside the repo. Source PDF structure tags and Content Credentials were not copied into the sanitized document; text remains searchable and the four public contact links remain active. Runtime is this repo on main at c1338841fd64038daeb642e50c699b8d70d5b317, Vite preview PID 13308 on port 4174, rebuilt in this slice. The pre-existing 5173 runtime was not used.
 ```

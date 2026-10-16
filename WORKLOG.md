@@ -328,3 +328,64 @@ Use this file for dated session notes, verification summaries, and references to
 - Verified `python scripts\check_state_docs.py` passed with UTF-8 output enabled for the shell process.
 - Recorded evidence in `docs/EVIDENCE_LOG.md` as `EV-2026-07-01-013`.
 - No dependencies, commit, push, branch, deployment or Git remote change was performed.
+
+## 2026-10-15 - Light Tech 2.0 local redesign
+
+- Rebuilt the existing React portfolio around the approved light reference: compact navigation, balanced hero with the original real photo, three featured cards, four skills columns, About principles and a quiet contact panel.
+- Redesigned `/projects` as a six-card, two-column desktop overview with a proper H1. Preserved all eight project objects, metadata, URLs and the existing visible/featured filters; the two hidden projects remain hidden.
+- Reused existing contact profile URLs and set the email to the value supplied in this request, `tobypelfrene@protonmail.com`. Kept the existing HTML CV URL for compatibility; an approved final PDF was not found.
+- Verified `npm.cmd run build`, local preview HTTP 200 for both routes, profile image and CV URL, and Edge DevTools screenshots/DOM metrics at 1440, 768 and 375px. No horizontal overflow was measured.
+- Recorded evidence as `EV-2026-10-15-001`. Production, external links and final PDF were not verified. No dependencies, commit, push or deployment was performed.
+
+## 2026-10-15 - Light Tech 2.0 skills and education content
+
+- Updated the four existing skill groups with all 37 requested curriculum items, without status or proficiency labels.
+- Replaced the existing About education paragraph with the programme name, 2026–Present dates and the requested short English description; preserved the personal paragraph and work principles.
+- Left project records, selection, links and visibility unchanged. No CSS or layout files were edited in this slice.
+- Verified `npm.cmd run build` (including TypeScript), local Vite preview at 1440, 768 and 375px, and `/projects` direct refresh. Recorded screenshots and DOM metrics in `EV-2026-10-15-002`.
+- No dependencies, commit, push or production deployment was performed.
+
+## 2026-10-15 - MC Service Evergem screenshot capture
+
+- Captured the real `https://mcservice-evergem.be/` homepage in Edge at 1440x900 CSS pixels with device pixel ratio 2.
+- Saved the original PNG and a 1200x675 WebP hero preview to `docs/evidence/mcservice-screenshots/` without overwriting existing files.
+- Visually inspected the preview for logo, headline, orange accent, hero image, sharpness and minimal whitespace. Recorded provenance in `EV-2026-10-15-003`.
+- No portfolio code, MC Service site, dependencies, commit, push or deployment changed.
+
+## 2026-10-15 - MC Service project image integration
+
+- Copied the reviewed MC Service WebP into `public/projects/` and added optional image and alt-text fields to its existing project record.
+- Updated the shared project card to render an image when available while preserving the typographic fallback for every other project.
+- Kept the existing image-zone dimensions and card layout; added only image clipping and `object-fit` CSS. The image loads lazily and has intrinsic dimensions to avoid layout shift.
+- Verified `npm.cmd run build`, all eight project records, unchanged visibility and order, and rebuilt local preview on both routes at 1440, 768 and 375px. Recorded decoded-image screenshots and DOM metrics in `EV-2026-10-15-004`.
+- No dependencies, commit, push or production deployment was performed.
+## 2026-10-15 - VPS Infrastructure image and content update
+
+- The requested `public/images/vps-infrastructure-preview.webp` was absent, so converted the user-attached PNG to that path without generating new artwork.
+- Updated only the VPS project record with the supplied short description, technologies, highlights, details, image metadata, and a non-clickable private infrastructure note.
+- Reused the shared project image component and adjusted only this image's object position so its main elements remain visible in the wide card.
+- Verified `npm.cmd run build`, project record counts/order, and the rebuilt local preview on both routes at 1440, 768 and 375px. Recorded final screenshots and DOM metrics in `EV-2026-10-15-005`.
+- Docker use is a user-reported project claim in this slice; the live VPS was not inspected. No dependency, commit, push or production deployment occurred.
+
+## 2026-10-15 - Subnet Master project image integration
+
+- Copied the exact user-attached PNG to `public/images/subnet-master-preview.png`; the requested path did not exist before this slice. Source and target SHA256 match.
+- Added optional intrinsic image dimensions and Subnet Master image metadata. The shared project card uses those dimensions while preserving its existing layout and image fallback.
+- Verified `npm.cmd run build`, all eight project records with unchanged selection and order, and the rebuilt local preview on both routes at 1440, 768 and 375px. Recorded screenshots and DOM metrics in `EV-2026-10-15-006`.
+- No dependency, commit, push or production deployment occurred.
+
+## 2026-10-15 - Hero text and professional positioning
+
+- Replaced the Hero kicker, heading, subtitle, description and availability with the exact user-provided English wording; kept both button destinations.
+- Removed IT support from the sought-role wording in Contact and the downloadable HTML CV, plus the SEO/social/structured descriptions. Preserved it as training content and a technical skill.
+- Updated the matching primary-audience and product-description state lines. No CSS, project data, image, navigation or section layout changed in this slice.
+- Verified `npm.cmd run build` (including TypeScript), the rebuilt local preview at 1440, 768 and 375px, exact browser text and metadata, project visibility, and no horizontal overflow. Captures and runtime metrics are in `EV-2026-10-15-007`.
+- No dependencies, commit, push or production deployment occurred.
+
+## 2026-10-15 - Public CV PDF integration [BL-006]
+
+- Used the PDF explicitly attached from Desktop; the alternate source path in the brief was absent. Created a separate public PDF by deleting the two private contact text operators and excluding source metadata, structure tags and embedded attachments. The original hash is unchanged.
+- Preserved all other extracted text, images, four public contact links and every rendered pixel outside the removed contact rows. The public PDF is one A4 page and 97003 bytes; text remains searchable.
+- Updated only the three App download hrefs and replaced the old HTML placeholder content with an accessible PDF link. Updated the CV documentation and removed the completed BL-006 item from the active queue.
+- Verified the TypeScript/Vite build, identical PDF bytes in public/dist/HTTP, all three browser downloads on desktop and mobile, unchanged project visibility, no horizontal overflow and pixel-identical website screenshots. Evidence is `EV-2026-10-15-008`.
+- Existing uncommitted work was preserved. No dependency, commit, push or production deployment occurred.
