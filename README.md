@@ -6,6 +6,8 @@ The site presents Toby as a Network & Systems Administration student with intere
 
 The homepage has a compact header, hero with Toby's existing real portrait, three featured projects, technical skills, About with work principles and direct contact links. `/projects` lists the six visible projects. Two projects remain deliberately hidden by `src/portfolioData.ts`.
 
+`/manuals` is Toby's IT Knowledge Base. It contains 62 imported educational manuals by Axel Huts, with internal source provenance, search, category filtering and direct document routes. The owner reports Axel's explicit permission to publish these manuals on the site and in this public repository without visible attribution. See `docs/MANUALS_SOURCE_AUDIT.md` for the source inventory, `docs/MANUALS_IMPLEMENTATION_REPORT.md` for fidelity limits and verification, and `docs/MANUALS_MAINTENANCE.md` to add or refresh manuals.
+
 The Download CV links serve `/Toby-Pelfrene-CV.pdf`, a public version of the supplied CV with private location and telephone details removed from the PDF content. The original source remains unchanged outside the repository. `/Toby-Pelfrene-CV.html` remains available as an accessible link to the PDF. Future CV replacements must receive the same text, metadata and visual privacy checks before publication.
 
 ## Tech Stack
@@ -15,6 +17,8 @@ The Download CV links serve `/Toby-Pelfrene-CV.pdf`, a public version of the sup
 - TailwindCSS
 - Vite
 - Static production build deployable on a VPS behind Nginx or another web server
+
+The site is deployed at `https://tobypelfrene.be` on the existing Easyhost VPS. The production webroot is `/var/www/tobypelfrene`; direct VPS HTTPS and browser checks passed on 2026-10-23. The deployment record and rollback path are in `docs/evidence/deployment-2026-10-23/`.
 
 ## Local Development
 
@@ -48,6 +52,7 @@ The build output is generated in `dist/`.
 - `src/App.tsx` - page sections and reusable UI components.
 - `src/portfolioData.ts` - skills, project, learning journey and contact data.
 - `src/styles.css` - Tailwind entrypoint and shared component styles.
+- `src/manuals/manifest.json` and `src/manuals/content/` - knowledge base metadata and Markdown documents.
 - `public/Toby-Pelfrene-CV.pdf` - public CV document.
 - `public/Toby-Pelfrene-CV.html` - compatibility page linking to the PDF.
 - `docs/evidence/` - verification artifacts for StateDD evidence tracking.

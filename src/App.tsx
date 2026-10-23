@@ -1,4 +1,5 @@
 import { contact, featuredProjects, projects, skillGroups, visibleProjects } from './portfolioData';
+import { ManualPage, ManualsOverview } from './manuals/Manuals';
 
 type Project = (typeof projects)[number];
 
@@ -11,12 +12,13 @@ function Icon({ kind }: { kind: 'arrow' | 'external' | 'download' }) {
   return <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">{path[kind]}</svg>;
 }
 
-function Header({ isHome }: { isHome: boolean }) {
+function Header({ isHome, currentPage }: { isHome: boolean; currentPage?: 'projects' | 'manuals' }) {
   const prefix = isHome ? '' : '/';
   return <header className="site-header" id="top"><div className="container header-inner">
     <a className="brand-link" href={isHome ? '#top' : '/'} aria-label="Toby Pelfrene, home">Toby Pelfrene<span>.</span></a>
     <nav className="site-nav" aria-label="Primary navigation">
-      <a href={isHome ? '#projects' : '/projects'} aria-current={isHome ? undefined : 'page'}>Projects</a>
+      <a href={isHome ? '#projects' : '/projects'} aria-current={currentPage === 'projects' ? 'page' : undefined}>Projects</a>
+      <a href="/manuals" aria-current={currentPage === 'manuals' ? 'page' : undefined}>Manuals</a>
       <a href={`${prefix}#skills`}>Skills</a><a href={`${prefix}#about`}>About</a><a href={`${prefix}#contact`}>Contact</a>
     </nav>
     <a className="button button-dark nav-cv" href="/Toby-Pelfrene-CV.pdf" download><Icon kind="download" />Download CV</a>
@@ -113,15 +115,17 @@ function Contact() {
 }
 
 function Footer() {
-  return <footer className="site-footer"><div className="container footer-inner"><span className="footer-brand">Toby Pelfrene<span>.</span></span><nav aria-label="Footer navigation"><a href="/projects">Projects</a><a href="/#skills">Skills</a><a href="/#about">About</a><a href="/#contact">Contact</a></nav></div></footer>;
+  return <footer className="site-footer"><div className="container footer-inner"><span className="footer-brand">Toby Pelfrene<span>.</span></span><nav aria-label="Footer navigation"><a href="/projects">Projects</a><a href="/manuals">Manuals</a><a href="/#skills">Skills</a><a href="/#about">About</a><a href="/#contact">Contact</a></nav></div></footer>;
 }
 
 function ProjectsPage() {
-  return <><Header isHome={false} /><main><section className="section projects-page" aria-labelledby="projects-title"><div className="container"><div className="projects-intro"><p className="eyebrow">Projects &amp; labs</p><h1 id="projects-title">Practical work, built to learn.</h1><p>A selection of tools, websites and infrastructure projects where I put networking, systems and automation skills into practice.</p></div><div className="project-grid all-projects-grid">{visibleProjects.map((project) => <ProjectCard project={project} key={project.title} />)}</div></div></section></main><Footer /></>;
+  return <><Header isHome={false} currentPage="projects" /><main><section className="section projects-page" aria-labelledby="projects-title"><div className="container"><div className="projects-intro"><p className="eyebrow">Projects &amp; labs</p><h1 id="projects-title">Practical work, built to learn.</h1><p>A selection of tools, websites and infrastructure projects where I put networking, systems and automation skills into practice.</p></div><div className="project-grid all-projects-grid">{visibleProjects.map((project) => <ProjectCard project={project} key={project.title} />)}</div></div></section></main><Footer /></>;
 }
 
 export default function App() {
   const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
   if (currentPath === '/projects') return <ProjectsPage />;
+  if (currentPath === '/manuals') return <><Header isHome={false} currentPage="manuals" /><ManualsOverview /><Footer /></>;
+  if (currentPath.startsWith('/manuals/')) return <><Header isHome={false} currentPage="manuals" /><ManualPage slug={currentPath.slice('/manuals/'.length)} /><Footer /></>;
   return <><Header isHome /><main><Hero /><FeaturedWork /><Skills /><About /><Contact /></main><Footer /></>;
 }

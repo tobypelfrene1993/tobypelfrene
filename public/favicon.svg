@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="TP — Toby Pelfrene">
+  <rect width="64" height="64" rx="13" fill="#142947"/>
+  <path d="M9 17h25v8h-8v22h-9V25H9z" fill="#3384CE"/>
+  <path d="M32 17h12c9 0 14 5.5 14 13.5C58 38.9 52.4 44 43.9 44H40v3h-8V17zm8 8v11h3.7c4 0 6.3-2.1 6.3-5.5S47.7 25 43.7 25H40z" fill="#FFFFFF" fill-rule="evenodd"/>
+</svg>

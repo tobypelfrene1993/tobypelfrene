@@ -1,7 +1,7 @@
 # PROJECT_STATE.yaml - Structured current truth
 
 metadata:
-  updated_at: 2026-10-15
+  updated_at: 2026-10-23
   updated_by: agent
   version: "statedd-template-v3"
 
@@ -14,8 +14,8 @@ workflow:
     repo_investigated: true
     user_intake_complete: true
     unknowns_remaining:
-      - final production domain is not verified
-      - VPS host, web root and HTTPS configuration are not yet verified
+      - imported manuals still need line-by-line editorial review
+      - independent rights for one source-hosted inline manual image are not verified
 
 verification_labels:
   observed: verified directly in the current session
@@ -31,8 +31,8 @@ current_state:
     canonical_path: C:\Project Toby\tobypelfrene
     path_status: observed
     branch: main
-    head: c1338841fd64038daeb642e50c699b8d70d5b317
-    worktree_status: dirty with Light Tech 2.0 changes and pre-existing untracked audit report and portfolio-dist.tar.gz
+    head: fa505ddb0b02a803e9f90d2f84775af6868e6b3e
+    worktree_status: dirty with favicon integration, manuals work and pre-existing untracked evidence, audit report and portfolio-dist.tar.gz
     remote: https://github.com/tobypelfrene1993/tobypelfrene.git
 
   operating_mode:
@@ -47,7 +47,7 @@ current_state:
     name: Toby Pelfrene Portfolio
     type: static_react_portfolio
     lifecycle_stage: bootstrap
-    truth_summary: light_tech_2_local_preview_verified
+    truth_summary: light_tech_2_tp_favicon_local_verified
     primary_user: Toby Pelfrene and recruiters or hiring managers for Network Administration, Systems Administration, Server Administration and IT Infrastructure roles
     positioning: Network & Systems Administration Student open to junior infrastructure-focused roles; not a trader or financial influencer
 
@@ -55,18 +55,19 @@ current_state:
     status: observed_local_preview
     repo_path: C:\Project Toby\tobypelfrene
     branch: main
-    head: c1338841fd64038daeb642e50c699b8d70d5b317
-    process_or_container: Vite preview from this repo, node listener PID 13308 during verification
-    port_or_base_url: http://127.0.0.1:4174/
+    head: fa505ddb0b02a803e9f90d2f84775af6868e6b3e
+    process_or_container: Vite preview via node.exe PID 37832, serving the rebuilt local dist
+    port_or_base_url: http://127.0.0.1:4182/
     rebuilt_in_current_slice: true
     duplicate_runtimes_checked: true
     notes: |
-      Light Tech 2.0 production build was rebuilt in this slice. Local preview
-      was checked at 1440, 768 and 375px on both routes using Edge DevTools.
-      A separate listener existed on port 5173 but was not used for acceptance.
-      Public VPS runtime identity is not proven. The supplied PDF CV has a
-      separate public version with private location and phone rows removed.
-      All three PDF downloads were verified in desktop and mobile browsers.
+      npm.cmd run build passed TypeScript and Vite in this slice. Edge loaded
+      the five TP icon URLs from the local preview with HTTP 200 and bytes
+      matching dist; the SVG rendered visually. Home, /projects, /projects/,
+      /manuals and a detail route rendered with five icon links. All 62
+      individual manual URLs returned 200 with the same icon references.
+      The prior production build remains on the Easyhost VPS at
+      https://tobypelfrene.be/; this favicon build was not deployed.
 
   environment:
     status: reported
@@ -88,7 +89,7 @@ current_state:
       edge: present at C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
     ports:
       listeners:
-        - 127.0.0.1:4174 served by node PID 13308 during Light Tech 2.0 verification
+        - 127.0.0.1:4182 served by node PID 37832 during TP favicon verification
       notes: |
         Port 5173 also had a separate listener during this slice; it was not used for verification.
 
@@ -146,8 +147,8 @@ current_state:
       - scripts/check_state_docs.py
       - scripts/test_init_template.py
     deployment_assumptions:
-      - static build in dist can be served from a VPS with Nginx or equivalent
-      - final public domain and TLS configuration are not yet verified
+      - observed: static dist build served by NGINX from /var/www/tobypelfrene
+      - observed: tobypelfrene.be HTTPS direct VPS response at 136.144.222.226
     contradictions:
       - email is implemented but still requires final user confirmation before public launch
       - LinkedIn and GitHub URLs were updated from user-provided values on 2026-06-10
@@ -166,6 +167,9 @@ current_state:
       - index.html
       - src/App.tsx
       - src/portfolioData.ts
+      - src/manuals/Manuals.tsx
+      - src/manuals/manifest.json
+      - src/manuals/content
       - src/styles.css
       - README.md
       - AGENTS.md
@@ -180,4 +184,5 @@ current_state:
       - docs/ACCEPTANCE_FREEZES.md
 
 active_problems:
-  - production domain and VPS runtime identity not verified
+  - imported manuals need line-by-line editorial review
+  - independent rights for the source-hosted inline manual image are not verified

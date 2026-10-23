@@ -2,7 +2,7 @@
 
 **Product:** Toby Pelfrene Portfolio
 **Execution Mode:** bootstrap
-**Updated At:** 2026-06-10
+**Updated At:** 2026-10-23
 
 ## Purpose
 
@@ -11,8 +11,7 @@ Reference these IDs from `NEXT_ACTIONS.md`.
 
 ## NOW
 
-- [BL-005] Confirm public contact and identity details.
-- [BL-007] Deploy portfolio to VPS and verify HTTPS runtime.
+- [BL-013] Editorially review the imported manuals and inline image rights.
 
 ## NEXT
 

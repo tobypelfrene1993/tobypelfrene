@@ -1,22 +1,16 @@
 # NEXT_ACTIONS - Active Execution Queue
 
-**Updated At:** 2026-10-15
+**Updated At:** 2026-10-23
 **Execution Mode:** bootstrap
 **Max Items:** 10
 
 ## Active Work
 
-### P1 [BL-005] Confirm production identity
-
-- Owner: Toby
-- Next action: Confirm intended production domain and deployment identity. The email, LinkedIn and GitHub values were supplied in the Light Tech 2.0 request and entered in source.
-- Exit criteria: Production identity is confirmed and the canonical URL and public contact details are checked against the deployed artifact.
-
-### P3 [BL-007] Deploy portfolio to VPS and verify HTTPS runtime
+### P2 [BL-013] Review deployed imported manuals
 
 - Owner: Toby / coding agent
-- Next action: Build `dist/`, deploy to target VPS web root and configure Nginx or equivalent static hosting.
-- Exit criteria: Public HTTPS URL serves the portfolio, duplicate runtimes are checked, and evidence is added to `docs/EVIDENCE_LOG.md`.
+- Next action: Review the 62 converted manuals against their original pages for editorial fidelity, especially command examples and the Packet Tracer checklist; confirm reuse rights for the one source-hosted inline image.
+- Exit criteria: Differences and asset rights are resolved or explicitly accepted, with evidence recorded.
 
 ## Queue Rules
 

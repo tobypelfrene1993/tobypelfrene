@@ -389,3 +389,41 @@ Use this file for dated session notes, verification summaries, and references to
 - Updated only the three App download hrefs and replaced the old HTML placeholder content with an accessible PDF link. Updated the CV documentation and removed the completed BL-006 item from the active queue.
 - Verified the TypeScript/Vite build, identical PDF bytes in public/dist/HTTP, all three browser downloads on desktop and mobile, unchanged project visibility, no horizontal overflow and pixel-identical website screenshots. Evidence is `EV-2026-10-15-008`.
 - Existing uncommitted work was preserved. No dependency, commit, push or production deployment occurred.
+## 2026-10-23 - M.A.C. manual collection and local knowledge base [BL-013]
+
+- Inspected the live Axel Huts M.A.C. index and its 62 linked manual routes. All 62 were accessible. The user reports the author's permission to reuse his own manuals.
+- Converted the manuals to local Markdown with source metadata and an itemized audit. Preserved 372 code blocks and 173 tables structurally; converted 67 HTML concept diagrams to text and one interactive 40-item checklist to readable entries. One inline image remains source-hosted; no source manual PDFs were found.
+- Added `/manuals`, direct document routes, search, source category filters, TOC, code copy, source attribution, optional PDF links, and navigation entries in the existing Light Tech 2.0 style. Added maintenance and implementation reports.
+- `npm.cmd run build` passed. Edge/Playwright verified the rebuilt Vite preview on port 4175 at desktop and mobile widths, all 62 direct routes with title/code/table counts, search/filter, links, code copy, image loading, no overflow, home, projects and CV response. Evidence: `EV-2026-10-23-001`.
+- Work remains local and uncommitted. No push, production deployment or unrelated repository cleanup occurred. Editorial review and inline image rights remain open before publication.
+
+## 2026-10-23 - Remove overview manuals notice
+
+- Removed only the imported-manuals notice/link from the `/manuals` overview and its unused CSS; individual manual attribution and source metadata remain.
+- `npm.cmd run build` passed. The rebuilt local preview on port 4175 showed 62 cards at 1440px and 375px, no notice element or horizontal overflow, working search/filter, and an individual source attribution link. Evidence: `EV-2026-10-23-002`.
+- No commit, push or production deployment occurred. Pre-existing uncommitted work was preserved.
+
+## 2026-10-23 - Deploy current Light Tech 2.0 build to Easyhost VPS [BL-005, BL-007]
+
+- Built the current local checkout with `npm.cmd run build`; `dist/index.html` and the CV PDF were present. Added `dist/projects/index.html` as an artifact-only fix for the physical `/projects/` directory. No website source code was changed.
+- Recreated `portfolio-dist.tar.gz` (1,363,014 bytes, SHA256 `29572ecd9e9a92dfdb167f7dcbbb64c9ef258d6408051a9e2c06d8aa79541c97`), uploaded it through `tobyvps`, and verified its hash and required files on the VPS.
+- Verified the existing NGINX webroot and direct HTTPS identity, then created and byte-compared `/var/www/tobypelfrene-backup-20261023-114738` before replacing the site files. Extraction, ownership/permissions, `nginx -t`, and reload passed; no rollback was needed.
+- Direct VPS HTTPS HEAD returned 200 for `/`, `/projects/`, `/manuals`, and the CV PDF. Live Edge checks verified the new asset hash, six projects and loaded images, 62 manuals, search/filter, individual attribution, and absence of the removed overview notice at desktop and mobile widths. Evidence: `EV-2026-10-23-003`.
+- No commit or GitHub push. Pre-existing local uncommitted work remains. Manual editorial review and independent inline-image rights remain open.
+
+## 2026-10-23 - Remove visible manual source labels and deploy
+
+- The owner explicitly confirmed Axel permits the 62 manuals to be published without visible name, link or other attribution. This is owner-reported, not independently verified. Internal source URLs remain in the manifest, Markdown and audit.
+- Removed attribution text and source links from the manuals overview, cards, detail header and footer; kept the generic imported designation, all manual content, search, filters and existing layout.
+- `npm.cmd run build` passed TypeScript and Vite. Local Edge verification checked 62 cards and all 62 direct routes with no visible source labels or links; search/filter, mobile width, home, projects and CV passed.
+- Rebuilt `portfolio-dist.tar.gz` (1,362,893 bytes, SHA256 `20bd49c11e01f01750c7e4391d5ceeaeb970d9bd921fc63a2f97398666503f88`), uploaded via SCP and matched the VPS hash. Added `dist/projects/index.html` as an artifact-only route fix.
+- Backed up and compared the existing webroot at `/var/www/tobypelfrene-backup-20261023-120224`; deployed to `/var/www/tobypelfrene`, tested and reloaded NGINX. Direct VPS HTTPS returned 200 for `/`, `/projects/`, `/manuals`, one detail route and the CV. Webroot index and direct HTTPS hashes matched.
+- Live Edge checked all 62 routes, no visible attribution, search/filter, code/tables, six project cards, loaded images and mobile width. Evidence: `EV-2026-10-23-004`. No rollback, commit or GitHub push. The worktree remains dirty; editorial review and independent rights for one source-hosted image remain open.
+
+## 2026-10-23 - TP favicon integration (local only)
+
+- Inspected the supplied Downloads kit. All seven expected files were present and valid: SVG, ICO, 16×16 and 32×32 PNG, Apple 180×180 PNG, and 192×192 and 512×512 PNG. Copied the five browser/Apple icons to `public/`; left the two app-sized icons in Downloads because the site has no web app manifest. Source and copied hashes matched.
+- Added five versioned favicon references to `index.html` without changing existing SEO, page content or styling. There were no prior icon references to conflict with.
+- `npm.cmd run build` passed TypeScript and Vite. The five copied files appeared in `dist/` with matching hashes. The main JS asset hash stayed `index-DTAT6zEY.js`.
+- Edge against rebuilt Vite preview PID 37832 on `127.0.0.1:4182` loaded each icon with HTTP 200 and matching bytes; the SVG visibly rendered. Home, `/projects`, `/projects/`, `/manuals` and a sample detail page rendered with five icon links. All 62 manual URLs returned 200 and contained the shared favicon references. Evidence: `EV-2026-10-23-005`.
+- The existing dirty worktree was preserved. No dependency, commit, GitHub push, VPS deployment, NGINX or DNS change was made.

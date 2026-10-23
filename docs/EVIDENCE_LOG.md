@@ -1004,3 +1004,141 @@
   as_of: 2026-10-15
   Notes: The source explicitly attached by the user was found on Desktop; the path inside the pasted brief was absent. The original stays outside the repo. Source PDF structure tags and Content Credentials were not copied into the sanitized document; text remains searchable and the four public contact links remain active. Runtime is this repo on main at c1338841fd64038daeb642e50c699b8d70d5b317, Vite preview PID 13308 on port 4174, rebuilt in this slice. The pre-existing 5173 runtime was not used.
 ```
+## EV-2026-10-23-001: Manuals source collection and local preview
+
+```yaml
+- ID: EV-2026-10-23-001
+  File:
+    - C:\Project Toby\tobypelfrene\docs\MANUALS_SOURCE_AUDIT.md
+    - C:\Project Toby\tobypelfrene\src\manuals\manifest.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-2026-10-23\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-2026-10-23\overview-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-2026-10-23\overview-375-viewport.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-2026-10-23\manual-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-2026-10-23\manual-375-viewport.png
+  Title: 62 imported manuals in Toby's IT Knowledge Base
+  Source/System: live_source_html | edge_browser | markdown_import | production_build | local_vite_preview
+  Route/Page:
+    - https://axelhuts.be/mac/
+    - http://127.0.0.1:4175/manuals
+    - http://127.0.0.1:4175/manuals/ad-domain-controller-install-demote
+  Action: Collected all linked manuals, built a native knowledge base and rebuilt the local preview.
+  Shows:
+    - 62 source cards and 62 accessible source manual pages
+    - 62 implemented local document routes with no title/code/table count mismatches
+    - Search, category filtering, TOC target, code copy and internal links work
+    - Representative long text, tables, code and source-hosted image render
+    - No horizontal overflow at 1440px or 375px on representative pages
+    - Existing home hero, six projects and CV PDF URL remain available
+  Proves: Local rebuilt preview behavior only; no production deployment or line-by-line editorial review.
+  Type: source-inventory-build-browser-runtime-verification
+  as_of: 2026-10-23
+  Notes: Repository C:\Project Toby\tobypelfrene on main at fa505ddb0b02a803e9f90d2f84775af6868e6b3e; Vite preview PID 35592 listened on 127.0.0.1:4175. The worktree was already dirty and remains uncommitted. No source manual PDFs were found.
+```
+
+## EV-2026-10-23-002: Remove manuals overview notice
+
+```yaml
+- ID: EV-2026-10-23-002
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-notice-2026-10-23\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-notice-2026-10-23\overview-bottom-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-notice-2026-10-23\overview-bottom-375.png
+  Title: Manuals overview notice removed without empty notice space
+  Source/System: production_build | local_vite_preview | edge_browser
+  Route/Page: http://127.0.0.1:4175/manuals
+  Action: Removed the requested paragraph/link and its unused CSS.
+  Shows:
+    - Notice text and element absent at 1440px and 375px
+    - 62 manual cards remain; search and category filter return expected results
+    - Individual manual attribution remains; no horizontal overflow
+  Proves: Rebuilt local preview behavior only; no production deployment.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-23
+  Notes: Repository C:\Project Toby\tobypelfrene on main at fa505ddb0b02a803e9f90d2f84775af6868e6b3e; rebuilt Vite preview PID 35592 on 127.0.0.1:4175 served index-C81O7Fsg.js. Worktree remains dirty and uncommitted.
+```
+
+## EV-2026-10-23-003: Easyhost VPS production deployment
+
+```yaml
+- ID: EV-2026-10-23-003
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\deployment-2026-10-23\deployment-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\deployment-2026-10-23\browser-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\deployment-2026-10-23\home-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\deployment-2026-10-23\projects-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\deployment-2026-10-23\manuals-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\deployment-2026-10-23\manuals-375.png
+  Title: Current Light Tech 2.0 build deployed and verified on tobypelfrene.be
+  Source/System: local_vite_build | tar_scp_ssh | nginx | direct_vps_https | edge_browser
+  Route/Page:
+    - https://tobypelfrene.be/
+    - https://tobypelfrene.be/projects/
+    - https://tobypelfrene.be/manuals
+    - https://tobypelfrene.be/Toby-Pelfrene-CV.pdf
+  Action: Built locally, archived, uploaded, backed up existing webroot, extracted into the verified webroot, tested and reloaded NGINX, then checked direct HTTPS and live browser behavior.
+  Shows:
+    - Local and uploaded archive SHA256 matched; required files including projects/index.html were present
+    - Backup /var/www/tobypelfrene-backup-20261023-114738 matched the predeploy webroot
+    - NGINX root and direct HTTPS index matched /var/www/tobypelfrene/index.html after deployment
+    - Direct VPS HEAD returned HTTP 200 for all four required URLs; /projects/ was not 403
+    - Live browser showed six projects, loaded project images, 62 manuals, search/filter, absent overview notice and individual attribution
+  Proves: The specified artifact was served from the existing Easyhost VPS at the public HTTPS domain on 2026-10-23. No rollback was needed.
+  Type: production-deployment-runtime-browser-verification
+  as_of: 2026-10-23
+  Notes: Repo C:\Project Toby\tobypelfrene, main at fa505ddb0b02a803e9f90d2f84775af6868e6b3e. NGINX on host cloud (Ubuntu 22.04.5 LTS) served /var/www/tobypelfrene at 136.144.222.226:443. Build was rebuilt in this slice. Worktree remains dirty; no commit or GitHub push.
+```
+
+## EV-2026-10-23-004: Manual source labels removed and live deployment
+
+```yaml
+- ID: EV-2026-10-23-004
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\live-runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\deployment-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\overview-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\live-overview-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\live-manual-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\manuals-source-labels-2026-10-23\live-manual-375.png
+  Title: All 62 manuals without visible source attribution on production
+  Source/System: local_vite_build | tar_scp_ssh | nginx | direct_vps_https | edge_browser
+  Route/Page:
+    - https://tobypelfrene.be/manuals
+    - https://tobypelfrene.be/manuals/cisco-etherchannel
+    - https://tobypelfrene.be/projects/
+  Action: Removed visible source labels after owner-reported explicit permission, retained internal provenance, rebuilt, backed up and deployed.
+  Shows:
+    - Local and remote archive SHA256 matched; backup diff showed no differences
+    - NGINX test and reload passed; webroot index hash matched direct VPS HTTPS response
+    - Five direct HTTPS routes returned 200, including /projects/ and the CV
+    - Live Edge checked all 62 manual routes with no visible source names or links
+    - Search and filter worked; code and tables remained; projects images loaded; mobile had no overflow
+  Proves: The rebuilt artifact was served on the existing VPS and the requested visible-label removal was verified in a live browser on 2026-10-23.
+  Type: production-deployment-runtime-browser-verification
+  as_of: 2026-10-23
+  Notes: Repo C:\Project Toby\tobypelfrene, main at fa505ddb0b02a803e9f90d2f84775af6868e6b3e. Backup /var/www/tobypelfrene-backup-20261023-120224. Owner-reported permission is not independently verified. No rollback, commit or GitHub push.
+```
+
+## EV-2026-10-23-005: Custom TP favicon verified locally
+
+```yaml
+- ID: EV-2026-10-23-005
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\tp-favicon-2026-10-23\runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\tp-favicon-2026-10-23\favicon-svg-edge.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\tp-favicon-2026-10-23\manuals-with-favicon-head.png
+  Title: TP favicon in rebuilt local portfolio preview
+  Source/System: supplied_downloads_kit | production_build | local_vite_preview | edge_browser
+  Route/Page: http://127.0.0.1:4182/
+  Action: Copied five valid icon files to public and added versioned icon links to index.html.
+  Shows:
+    - TypeScript and Vite build passed; all five icons in dist match their public sources
+    - Edge displayed the TP SVG; all five icon URLs returned 200 with bytes matching dist
+    - Home, projects, manuals and a detail page render with five icon links
+    - All 62 manual URLs returned 200 with the shared favicon links
+  Proves: The local rebuilt site serves and renders the new TP favicon; production was not changed.
+  Type: build-browser-runtime-verification
+  as_of: 2026-10-23
+  Notes: Repo C:\Project Toby\tobypelfrene on main at fa505ddb0b02a803e9f90d2f84775af6868e6b3e; node.exe PID 37832 served the rebuilt dist on 127.0.0.1:4182. Worktree remains dirty; no commit, push or VPS deployment.
+```

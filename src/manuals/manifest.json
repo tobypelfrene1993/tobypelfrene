@@ -1,0 +1,1829 @@
+[
+  {
+    "slug": "ad-domain-controller-install-demote",
+    "title": "Windows Server: Installing & Demoting a Domain Controller (PowerShell)",
+    "category": "SYS-AD(8)",
+    "tags": [
+      "windows",
+      "active-directory",
+      "powershell",
+      "domain-controller",
+      "server-admin",
+      "sysadmin"
+    ],
+    "excerpt": "a sysadmin-level reference for promoting a new active directory forest and safely demoting the last domain controller in a domain using the addsdeployment powershell module — including why lastdomaincontrollerindomain is a one-way door.",
+    "sourceUrl": "https://axelhuts.be/mac/ad-domain-controller-install-demote",
+    "wordCount": 881,
+    "sectionCount": 11,
+    "codeBlocks": 3,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "arp-ping-mac-table",
+    "title": "CCNA: ARP, Ping & MAC Address Tables",
+    "category": "NET-L2(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "arp",
+      "ping",
+      "mac-address-table",
+      "icmp"
+    ],
+    "excerpt": "how arp resolves ipv4 addresses to mac addresses, what ping proves, and how layer 2 forwarding tables are populated.",
+    "sourceUrl": "https://axelhuts.be/mac/arp-ping-mac-table",
+    "wordCount": 1041,
+    "sectionCount": 16,
+    "codeBlocks": 3,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "bpdu-guard-filter",
+    "title": "CCNA: BPDU Guard & BPDU Filter",
+    "category": "NET-STP(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "stp",
+      "bpdu-guard",
+      "bpdu-filter",
+      "portfast"
+    ],
+    "excerpt": "edge-port protections that react to or suppress bpdus, with the operational risk of using the wrong feature.",
+    "sourceUrl": "https://axelhuts.be/mac/bpdu-guard-filter",
+    "wordCount": 968,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ccna-tcp-ip-model",
+    "title": "CCNA: TCP/IP Model, OSI & Encapsulation",
+    "category": "NET-MODEL(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "tcp-ip",
+      "osi",
+      "encapsulation",
+      "protocols"
+    ],
+    "excerpt": "the five-layer tcp/ip model, the osi comparison, protocol standards, pdus and the encapsulation path.",
+    "sourceUrl": "https://axelhuts.be/mac/ccna-tcp-ip-model",
+    "wordCount": 935,
+    "sectionCount": 15,
+    "codeBlocks": 0,
+    "tables": 4,
+    "diagrams": 2,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cdp-lldp",
+    "title": "CCNA: CDP & LLDP Neighbor Discovery",
+    "category": "NET-MGMT(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "cdp",
+      "lldp",
+      "discovery",
+      "layer-2"
+    ],
+    "excerpt": "cisco discovery protocol and link layer discovery protocol for documenting directly connected devices.",
+    "sourceUrl": "https://axelhuts.be/mac/cdp-lldp",
+    "wordCount": 1037,
+    "sectionCount": 17,
+    "codeBlocks": 6,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-etherchannel",
+    "title": "Cisco CLI: EtherChannel — PAgP, LACP & Layer 3 Link Aggregation",
+    "category": "NET-L2(8)",
+    "tags": [
+      "cisco",
+      "etherchannel",
+      "lacp",
+      "pagp",
+      "port-channel",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a ccna-level guide to bundling physical interfaces into a single logical etherchannel using pagp, lacp, or static configuration — including per-flow load balancing, layer 3 etherchannel, and the spanning tree bandwidth problem it exists to solve.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-etherchannel",
+    "wordCount": 921,
+    "sectionCount": 12,
+    "codeBlocks": 13,
+    "tables": 2,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-extended-acls",
+    "title": "Cisco CLI: Extended ACL Configuration & Verification",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "acl",
+      "extended",
+      "security",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a ccna-level guide to configuring named and numbered extended acls for source, destination, protocol, and port-level filtering — and why placement close to the traffic source matters.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-extended-acls",
+    "wordCount": 531,
+    "sectionCount": 11,
+    "codeBlocks": 19,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-interfaces-and-cables",
+    "title": "CCNA Fundamentals: Network Interfaces & Cabling Standards",
+    "category": "NET-PHY(8)",
+    "tags": [
+      "cisco",
+      "interfaces",
+      "cabling",
+      "ethernet",
+      "fiber-optic",
+      "ccna"
+    ],
+    "excerpt": "a ccna layer 1 reference covering rj-45/sfp interfaces, straight-through vs. crossover cabling, auto mdi-x, and the full ieee 802.3 standards tables for both copper (10base-t through 10gbase-t) and fiber (1000base-lx through 10gbase-er) ethernet.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-interfaces-and-cables",
+    "wordCount": 1115,
+    "sectionCount": 18,
+    "codeBlocks": 0,
+    "tables": 6,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-ios-cli-command-reference",
+    "title": "CCNA: Cisco IOS CLI Command Reference",
+    "category": "CCNA-CLI(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ios",
+      "cli",
+      "configuration",
+      "troubleshooting",
+      "cheat-sheet"
+    ],
+    "excerpt": "a task-oriented cisco ios command reference for setup, switching, routing, ipv6, security, services and structured verification.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-ios-cli-command-reference",
+    "wordCount": 1734,
+    "sectionCount": 15,
+    "codeBlocks": 25,
+    "tables": 2,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-nat-concepts",
+    "title": "Cisco NAT Concepts: Translating Private to Public IPs",
+    "category": "NET-CONCEPT(8)",
+    "tags": [
+      "cisco",
+      "nat",
+      "concepts",
+      "routing",
+      "networking"
+    ],
+    "excerpt": "a beginner-friendly breakdown of how a cisco router uses source nat to translate private ip addresses into public ip addresses for internet access.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-nat-concepts",
+    "wordCount": 540,
+    "sectionCount": 14,
+    "codeBlocks": 0,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [
+      {
+        "url": "https://axelhuts.be/_astro/image_7.Dld59rs9.png",
+        "alt": "Source NAT flow diagram: inside network (green) to outside network (blue) via the NAT translation engine on a Cisco router"
+      }
+    ],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-nat-reference",
+    "title": "Cisco NAT: Static NAT, Dynamic NAT & PAT Reference",
+    "category": "NET-NAT(8)",
+    "tags": [
+      "cisco",
+      "nat",
+      "pat",
+      "static-nat",
+      "dynamic-nat",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a ccna reference for rfc 1918 private addressing, nat terminology, static and dynamic nat, pat overload, configuration order, and verification.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-nat-reference",
+    "wordCount": 812,
+    "sectionCount": 12,
+    "codeBlocks": 15,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-packet-tracer-checklist",
+    "title": "Cisco Packet Tracer: Network Build Checklist",
+    "category": "NET-AUDIT(8)",
+    "tags": [
+      "cisco",
+      "packet-tracer",
+      "checklist",
+      "vlan",
+      "dhcp",
+      "hardening"
+    ],
+    "excerpt": "an interactive pre-flight audit checklist covering ip planning, vlans, router/switch hardening, dhcp, and physical layer setup.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-packet-tracer-checklist",
+    "wordCount": 725,
+    "sectionCount": 8,
+    "codeBlocks": 0,
+    "tables": 0,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac",
+      "https://axelhuts.be/mac/cisco-nat-concepts",
+      "https://axelhuts.be/mac/cisco-pat-interface",
+      "https://axelhuts.be/mac/cisco-pat-pool",
+      "https://axelhuts.be/mac/cisco-port-security-mac-sticky",
+      "https://axelhuts.be/mac/cisco-port-security-violation-modes",
+      "https://axelhuts.be/mac/cisco-ssh-remote-access",
+      "https://axelhuts.be/mac/cisco-static-ip-routing",
+      "https://axelhuts.be/mac/cisco-switch-initial-config",
+      "https://axelhuts.be/mac/cisco-switchport-nonegotiate"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-pat-interface",
+    "title": "Cisco PAT Configuration (Interface)",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "pat",
+      "nat",
+      "interface",
+      "overload",
+      "cli"
+    ],
+    "excerpt": "configure port address translation (pat) by mapping an access-list directly to an outgoing interface using the overload keyword.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-pat-interface",
+    "wordCount": 451,
+    "sectionCount": 9,
+    "codeBlocks": 7,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-pat-pool",
+    "title": "Cisco PAT Configuration (Pool)",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "pat",
+      "nat",
+      "pool",
+      "overload",
+      "cli"
+    ],
+    "excerpt": "configure port address translation (pat) by mapping an access-list to a defined nat pool using the overload keyword.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-pat-pool",
+    "wordCount": 493,
+    "sectionCount": 10,
+    "codeBlocks": 9,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-port-security-mac-sticky",
+    "title": "Cisco CLI Hardening: Dynamic Learning with Sticky MAC Port Security",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "switch",
+      "security",
+      "port-security",
+      "sticky",
+      "mac",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a ccna-level guide to 'switchport port-security mac-address sticky', dynamically converting dynamically learned layer 2 mac addresses into persistent running configuration entries.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-port-security-mac-sticky",
+    "wordCount": 374,
+    "sectionCount": 13,
+    "codeBlocks": 7,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-port-security-violation-modes",
+    "title": "Cisco CLI Hardening: Port Security MAC Enforcement & Violation Modes",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "switch",
+      "security",
+      "port-security",
+      "mac",
+      "violation",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a ccna-level guide to configuring layer 2 port security, static mac address binding, and comparing protect, restrict, and shutdown violation modes on cisco ios switches.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-port-security-violation-modes",
+    "wordCount": 426,
+    "sectionCount": 12,
+    "codeBlocks": 9,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-reset",
+    "title": "Cisco CLI: Factory Resetting a Router",
+    "category": "SYS-MAN(8)",
+    "tags": [
+      "cisco",
+      "reset",
+      "router",
+      "nvrram",
+      "config-register",
+      "cli"
+    ],
+    "excerpt": "quick reference for wiping nvram startup configurations and resetting the standard boot register behavior.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-reset",
+    "wordCount": 286,
+    "sectionCount": 4,
+    "codeBlocks": 6,
+    "tables": 0,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-ssh-remote-access",
+    "title": "Cisco CLI Hardening: SSH v2 Remote Access & Management IP Setup",
+    "category": "SEC-MAN(8)",
+    "tags": [
+      "cisco",
+      "ssh",
+      "security",
+      "ccna",
+      "vty",
+      "management",
+      "cli"
+    ],
+    "excerpt": "a ccna-level guide to configuring secure ssh v2 access, local user credentials, vty lines, and layer 3 management ip addressing on cisco switches and routers.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-ssh-remote-access",
+    "wordCount": 938,
+    "sectionCount": 19,
+    "codeBlocks": 19,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-ssh",
+    "title": "Cisco CLI: Configuring Secure Shell (SSH)",
+    "category": "SEC-MAN(8)",
+    "tags": [
+      "cisco",
+      "ssh",
+      "security",
+      "telnet",
+      "encryption",
+      "cli"
+    ],
+    "excerpt": "step-by-step terminal reference to replace vulnerable telnet access with encrypted ssh sessions.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-ssh",
+    "wordCount": 579,
+    "sectionCount": 13,
+    "codeBlocks": 9,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-standard-acls",
+    "title": "Cisco Standard ACL Configuration & Verification",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "acl",
+      "security",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a complete guide to configuring, applying, editing, and verifying numbered and named standard ipv4 access control lists (acls) on cisco ios.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-standard-acls",
+    "wordCount": 627,
+    "sectionCount": 11,
+    "codeBlocks": 17,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-static-ip-routing",
+    "title": "Cisco CLI routes: Cisco IOS Static IP Routing & Default Routes",
+    "category": "NET-ROUTE(8)",
+    "tags": [
+      "cisco",
+      "routing",
+      "static",
+      "default-route",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a comprehensive ccna guide to configuring static routes, next-hop vs exit-interface forwarding, default routes, floating backup routes, and verification commands in cisco ios.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-static-ip-routing",
+    "wordCount": 751,
+    "sectionCount": 16,
+    "codeBlocks": 10,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-switch-initial-config",
+    "title": "Cisco CLI: Switch Initial Configuration Baseline & Hardening",
+    "category": "SEC-MAN(8)",
+    "tags": [
+      "cisco",
+      "security",
+      "switch",
+      "baseline",
+      "hardening",
+      "cli"
+    ],
+    "excerpt": "zero-trust baseline for hardening a new cisco catalyst switch out of the box: hostname, banner, interface shutdown, line auth, enable secret, encryption, and persistence.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-switch-initial-config",
+    "wordCount": 575,
+    "sectionCount": 12,
+    "codeBlocks": 14,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-switch-reset",
+    "title": "Cisco CLI: Factory Resetting a Switch",
+    "category": "SW-MAN(8)",
+    "tags": [
+      "cisco",
+      "reset",
+      "switch",
+      "vlan",
+      "startup-config",
+      "cli"
+    ],
+    "excerpt": "quick reference for clearing the startup configuration and purging the separate flash vlan database.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-switch-reset",
+    "wordCount": 287,
+    "sectionCount": 4,
+    "codeBlocks": 4,
+    "tables": 0,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-switchport-nonegotiate",
+    "title": "Cisco CLI Hardening: Disabling DTP with Switchport Nonegotiate",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "switch",
+      "security",
+      "dtp",
+      "vlan",
+      "ccna",
+      "cli"
+    ],
+    "excerpt": "a ccna-level guide to disabling dynamic trunking protocol (dtp) using 'switchport nonegotiate', preventing vlan hopping attacks, and securing access and trunk links in cisco ios.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-switchport-nonegotiate",
+    "wordCount": 409,
+    "sectionCount": 13,
+    "codeBlocks": 9,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "cisco-vlan-trunking",
+    "title": "Cisco CLI: VLANs, Trunking & Router-on-a-Stick",
+    "category": "NET-MAN(8)",
+    "tags": [
+      "cisco",
+      "vlan",
+      "trunking",
+      "roas",
+      "802.1q",
+      "cli"
+    ],
+    "excerpt": "essential reference for configuring access vlans, native trunking, subinterfaces, dhcp helpers, and verification commands.",
+    "sourceUrl": "https://axelhuts.be/mac/cisco-vlan-trunking",
+    "wordCount": 357,
+    "sectionCount": 10,
+    "codeBlocks": 15,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "dhcp-snooping",
+    "title": "CCNA: DHCP Snooping",
+    "category": "SEC-L2(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "dhcp",
+      "dhcp-snooping",
+      "switch-security",
+      "layer-2-security"
+    ],
+    "excerpt": "layer 2 dhcp filtering, trusted ports, binding tables, rogue-server prevention, rate limiting and option 82.",
+    "sourceUrl": "https://axelhuts.be/mac/dhcp-snooping",
+    "wordCount": 1106,
+    "sectionCount": 13,
+    "codeBlocks": 9,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "dhcp",
+    "title": "CCNA: DHCP & DHCP Relay",
+    "category": "NET-SVC(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "dhcp",
+      "dhcp-relay",
+      "ipv4",
+      "network-services"
+    ],
+    "excerpt": "dynamic ipv4 lease delivery, the dora exchange, scope components and relay forwarding across a router.",
+    "sourceUrl": "https://axelhuts.be/mac/dhcp",
+    "wordCount": 1072,
+    "sectionCount": 17,
+    "codeBlocks": 6,
+    "tables": 3,
+    "diagrams": 2,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "dns",
+    "title": "CCNA: DNS Fundamentals",
+    "category": "NET-SVC(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "dns",
+      "name-resolution",
+      "network-services",
+      "udp"
+    ],
+    "excerpt": "name resolution, dns hierarchy, common record types, recursive queries and practical cisco name-server configuration.",
+    "sourceUrl": "https://axelhuts.be/mac/dns",
+    "wordCount": 1040,
+    "sectionCount": 17,
+    "codeBlocks": 7,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "dynamic-arp-inspection",
+    "title": "CCNA: Dynamic ARP Inspection (DAI)",
+    "category": "SEC-L2(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "arp",
+      "dai",
+      "dhcp-snooping",
+      "switch-security",
+      "layer-2-security"
+    ],
+    "excerpt": "layer 2 arp inspection, dhcp snooping bindings, arp poisoning prevention, rate limits, validation and arp acls.",
+    "sourceUrl": "https://axelhuts.be/mac/dynamic-arp-inspection",
+    "wordCount": 1183,
+    "sectionCount": 13,
+    "codeBlocks": 12,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "dynamic-routing-protocols",
+    "title": "CCNA: Dynamic Routing Protocols",
+    "category": "NET-ROUTE(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "routing",
+      "dynamic-routing",
+      "rip",
+      "eigrp",
+      "ospf"
+    ],
+    "excerpt": "why routers exchange routes dynamically, protocol categories, metrics, administrative distance and convergence.",
+    "sourceUrl": "https://axelhuts.be/mac/dynamic-routing-protocols",
+    "wordCount": 881,
+    "sectionCount": 16,
+    "codeBlocks": 3,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ethernet-lan-switching",
+    "title": "CCNA: Ethernet LAN Switching",
+    "category": "NET-L2(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ethernet",
+      "switching",
+      "mac-address-table",
+      "layer-2"
+    ],
+    "excerpt": "ethernet frames, mac addresses, switching decisions, flooding and mac address-table learning.",
+    "sourceUrl": "https://axelhuts.be/mac/ethernet-lan-switching",
+    "wordCount": 1028,
+    "sectionCount": 16,
+    "codeBlocks": 2,
+    "tables": 3,
+    "diagrams": 2,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "fhrp",
+    "title": "CCNA: First Hop Redundancy Protocols (FHRP)",
+    "category": "NET-REDUND(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "fhrp",
+      "hsrp",
+      "vrrp",
+      "default-gateway"
+    ],
+    "excerpt": "providing a resilient default gateway with virtual ip and mac addresses using hsrp, vrrp or glbp concepts.",
+    "sourceUrl": "https://axelhuts.be/mac/fhrp",
+    "wordCount": 895,
+    "sectionCount": 16,
+    "codeBlocks": 2,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "folder-redirection",
+    "title": "Folder Redirection",
+    "category": "SYS-GPO(8)",
+    "tags": [
+      "windows-server",
+      "active-directory",
+      "group-policy",
+      "folder-redirection",
+      "user-profiles",
+      "server-admin",
+      "sysadmin"
+    ],
+    "excerpt": "redirect desktop and documents folders to a server share with folder redirection: a group policy feature that keeps user data stored and synchronized on a central server, relieves roaming profiles, and improves login times.",
+    "sourceUrl": "https://axelhuts.be/mac/folder-redirection",
+    "wordCount": 1841,
+    "sectionCount": 33,
+    "codeBlocks": 5,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ftp-tftp",
+    "title": "CCNA: FTP & TFTP File Transfer",
+    "category": "NET-SVC(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ftp",
+      "tftp",
+      "file-transfer",
+      "ios"
+    ],
+    "excerpt": "cisco ios configuration backups, ftp versus tftp behavior and safe transfer verification.",
+    "sourceUrl": "https://axelhuts.be/mac/ftp-tftp",
+    "wordCount": 1194,
+    "sectionCount": 17,
+    "codeBlocks": 6,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ipv4-addressing-part-1",
+    "title": "CCNA: IPv4 Addressing Fundamentals",
+    "category": "NET-IPV4(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ipv4",
+      "addressing",
+      "subnetting",
+      "cidr"
+    ],
+    "excerpt": "ipv4 structure, binary notation, classful ranges, private addresses, prefixes and subnet masks.",
+    "sourceUrl": "https://axelhuts.be/mac/ipv4-addressing-part-1",
+    "wordCount": 897,
+    "sectionCount": 15,
+    "codeBlocks": 0,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ipv4-addressing-part-2",
+    "title": "CCNA: IPv4 Subnet Calculations & Interface Setup",
+    "category": "NET-IPV4(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ipv4",
+      "subnetting",
+      "interfaces",
+      "cli"
+    ],
+    "excerpt": "finding network, broadcast and usable host addresses, then assigning ipv4 addresses to cisco interfaces.",
+    "sourceUrl": "https://axelhuts.be/mac/ipv4-addressing-part-2",
+    "wordCount": 939,
+    "sectionCount": 16,
+    "codeBlocks": 6,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ipv4-header",
+    "title": "CCNA: IPv4 Header & Packet Delivery",
+    "category": "NET-IPV4(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ipv4",
+      "ip-header",
+      "routing",
+      "packets"
+    ],
+    "excerpt": "the ipv4 packet header: addressing, ttl, protocol identification, fragmentation fields and header integrity.",
+    "sourceUrl": "https://axelhuts.be/mac/ipv4-header",
+    "wordCount": 919,
+    "sectionCount": 15,
+    "codeBlocks": 0,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ipv6-addressing",
+    "title": "CCNA: IPv6 Addressing Fundamentals",
+    "category": "NET-IPV6(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ipv6",
+      "addressing",
+      "prefixes",
+      "slaac"
+    ],
+    "excerpt": "ipv6 notation, prefix length, address categories, compression rules and interface identifiers.",
+    "sourceUrl": "https://axelhuts.be/mac/ipv6-addressing",
+    "wordCount": 892,
+    "sectionCount": 16,
+    "codeBlocks": 2,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ipv6-routing-and-autoconfig",
+    "title": "CCNA: IPv6 Routing, SLAAC & DHCPv6",
+    "category": "NET-IPV6(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ipv6",
+      "slaac",
+      "dhcpv6",
+      "routing"
+    ],
+    "excerpt": "ipv6 forwarding, neighbor discovery, router advertisements, slaac and stateful or stateless dhcpv6 concepts.",
+    "sourceUrl": "https://axelhuts.be/mac/ipv6-routing-and-autoconfig",
+    "wordCount": 883,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ipv6-services-and-troubleshooting",
+    "title": "CCNA: IPv6 Services & Troubleshooting",
+    "category": "NET-IPV6(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ipv6",
+      "troubleshooting",
+      "static-routes",
+      "icmpv6"
+    ],
+    "excerpt": "ipv6 route selection, static routes, dual-stack diagnostics and common neighbor discovery troubleshooting steps.",
+    "sourceUrl": "https://axelhuts.be/mac/ipv6-services-and-troubleshooting",
+    "wordCount": 911,
+    "sectionCount": 16,
+    "codeBlocks": 3,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "lan-architectures",
+    "title": "CCNA: LAN Architectures",
+    "category": "NET-DESIGN(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "lan-architecture",
+      "campus",
+      "spine-leaf",
+      "soho",
+      "network-design"
+    ],
+    "excerpt": "campus lan topologies, two-tier and three-tier hierarchy, spine-leaf data centers, east-west traffic and soho design.",
+    "sourceUrl": "https://axelhuts.be/mac/lan-architectures",
+    "wordCount": 2001,
+    "sectionCount": 20,
+    "codeBlocks": 0,
+    "tables": 9,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "loop-guard",
+    "title": "CCNA: Loop Guard",
+    "category": "NET-STP(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "stp",
+      "loop-guard",
+      "layer-2",
+      "redundancy"
+    ],
+    "excerpt": "protection against a unidirectional stp failure that stops bpdus arriving on a non-designated port.",
+    "sourceUrl": "https://axelhuts.be/mac/loop-guard",
+    "wordCount": 883,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ntfs-share-permissions",
+    "title": "Windows Server: NTFS & Share Permissions Explained",
+    "category": "SYS-FS(8)",
+    "tags": [
+      "windows",
+      "ntfs",
+      "permissions",
+      "sharing",
+      "server-admin",
+      "sysadmin"
+    ],
+    "excerpt": "a concise reference on ntfs permission levels, the explicit/inherited deny-allow priority order, and how share permissions combine with ntfs to produce the effective, most-restrictive access.",
+    "sourceUrl": "https://axelhuts.be/mac/ntfs-share-permissions",
+    "wordCount": 767,
+    "sectionCount": 15,
+    "codeBlocks": 8,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ntp",
+    "title": "CCNA: Network Time Protocol (NTP)",
+    "category": "NET-SVC(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ntp",
+      "time",
+      "syslog",
+      "network-services"
+    ],
+    "excerpt": "why consistent time matters, ntp client/server relationships, stratum and cisco time synchronization verification.",
+    "sourceUrl": "https://axelhuts.be/mac/ntp",
+    "wordCount": 1101,
+    "sectionCount": 17,
+    "codeBlocks": 7,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ospf-advanced",
+    "title": "CCNA: OSPF Route Types & Troubleshooting",
+    "category": "NET-OSPF(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ospf",
+      "routing",
+      "troubleshooting",
+      "lsa"
+    ],
+    "excerpt": "inter-area and external routes, route summarization context, default propagation and systematic ospf checks.",
+    "sourceUrl": "https://axelhuts.be/mac/ospf-advanced",
+    "wordCount": 947,
+    "sectionCount": 16,
+    "codeBlocks": 5,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ospf-basics",
+    "title": "CCNA: OSPF Fundamentals",
+    "category": "NET-OSPF(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ospf",
+      "routing",
+      "link-state",
+      "area-0"
+    ],
+    "excerpt": "ospf neighbors, router ids, areas, link-state information, cost and basic single-area operation.",
+    "sourceUrl": "https://axelhuts.be/mac/ospf-basics",
+    "wordCount": 1051,
+    "sectionCount": 17,
+    "codeBlocks": 4,
+    "tables": 4,
+    "diagrams": 2,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "ospf-neighbors-and-areas",
+    "title": "CCNA: OSPF Neighbors, DR/BDR & Areas",
+    "category": "NET-OSPF(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "ospf",
+      "neighbors",
+      "dr-bdr",
+      "areas"
+    ],
+    "excerpt": "ospf adjacency states, broadcast-network dr/bdr election and the role of areas in a scalable design.",
+    "sourceUrl": "https://axelhuts.be/mac/ospf-neighbors-and-areas",
+    "wordCount": 916,
+    "sectionCount": 16,
+    "codeBlocks": 3,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "qos-classification-queuing",
+    "title": "CCNA: QoS Queuing, Congestion Avoidance & Trust",
+    "category": "NET-QOS(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "qos",
+      "dscp",
+      "cos",
+      "queuing",
+      "wred"
+    ],
+    "excerpt": "dscp and cos markings, priority treatment, queue behavior and early drop concepts in a policy-based qos design.",
+    "sourceUrl": "https://axelhuts.be/mac/qos-classification-queuing",
+    "wordCount": 953,
+    "sectionCount": 15,
+    "codeBlocks": 0,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "qos-fundamentals",
+    "title": "CCNA: QoS Fundamentals",
+    "category": "NET-QOS(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "qos",
+      "congestion",
+      "classification",
+      "marking"
+    ],
+    "excerpt": "why congestion matters, the qos toolset, traffic classification, marking, policing, shaping and queuing.",
+    "sourceUrl": "https://axelhuts.be/mac/qos-fundamentals",
+    "wordCount": 900,
+    "sectionCount": 15,
+    "codeBlocks": 0,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "rapid-spanning-tree",
+    "title": "CCNA: Rapid Spanning Tree Protocol (RSTP)",
+    "category": "NET-STP(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "rstp",
+      "stp",
+      "rapid-pvst",
+      "switching"
+    ],
+    "excerpt": "rstp roles, states, proposal/agreement and the faster convergence behavior of ieee 802.1w.",
+    "sourceUrl": "https://axelhuts.be/mac/rapid-spanning-tree",
+    "wordCount": 923,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "rip-eigrp",
+    "title": "CCNA: RIP & EIGRP Routing",
+    "category": "NET-ROUTE(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "rip",
+      "eigrp",
+      "routing",
+      "distance-vector"
+    ],
+    "excerpt": "distance-vector routing with rip hop count and the eigrp neighbor, metric and feasibility concepts.",
+    "sourceUrl": "https://axelhuts.be/mac/rip-eigrp",
+    "wordCount": 954,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "root-guard",
+    "title": "CCNA: Root Guard",
+    "category": "NET-STP(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "stp",
+      "root-guard",
+      "root-bridge",
+      "switching"
+    ],
+    "excerpt": "keeping the intended root bridge authoritative by blocking superior bpdus on selected downstream ports.",
+    "sourceUrl": "https://axelhuts.be/mac/root-guard",
+    "wordCount": 871,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "security-fundamentals",
+    "title": "CCNA: Network Security Fundamentals",
+    "category": "SEC-FUND(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "security",
+      "hardening",
+      "access-control",
+      "cryptography"
+    ],
+    "excerpt": "threat categories, defense in depth, access control, hardening, cryptography basics and operational security.",
+    "sourceUrl": "https://axelhuts.be/mac/security-fundamentals",
+    "wordCount": 1074,
+    "sectionCount": 17,
+    "codeBlocks": 3,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "snmp",
+    "title": "CCNA: SNMP Monitoring Fundamentals",
+    "category": "NET-MGMT(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "snmp",
+      "monitoring",
+      "mib",
+      "network-management"
+    ],
+    "excerpt": "network management with snmp managers and agents, mib/oids, polling, traps and basic security distinctions.",
+    "sourceUrl": "https://axelhuts.be/mac/snmp",
+    "wordCount": 993,
+    "sectionCount": 17,
+    "codeBlocks": 3,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "stp-fundamentals",
+    "title": "CCNA: Spanning Tree Protocol Fundamentals",
+    "category": "NET-STP(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "stp",
+      "switching",
+      "layer-2",
+      "bpdu"
+    ],
+    "excerpt": "why layer 2 loops are dangerous, how stp elects a root bridge and how a loop-free topology is formed.",
+    "sourceUrl": "https://axelhuts.be/mac/stp-fundamentals",
+    "wordCount": 967,
+    "sectionCount": 16,
+    "codeBlocks": 3,
+    "tables": 3,
+    "diagrams": 2,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "stp-port-roles",
+    "title": "CCNA: STP Port Roles, States & Path Selection",
+    "category": "NET-STP(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "stp",
+      "port-roles",
+      "switching",
+      "path-cost"
+    ],
+    "excerpt": "root ports, designated ports, blocked paths, path costs and the decision sequence used by classic stp.",
+    "sourceUrl": "https://axelhuts.be/mac/stp-port-roles",
+    "wordCount": 923,
+    "sectionCount": 16,
+    "codeBlocks": 2,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "switch-speed-duplex",
+    "title": "CCNA: Switch Interfaces, Speed & Duplex",
+    "category": "NET-L2(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "switching",
+      "speed",
+      "duplex",
+      "interfaces"
+    ],
+    "excerpt": "ethernet interface negotiation, duplex mismatches, interface errors and practical cisco verification.",
+    "sourceUrl": "https://axelhuts.be/mac/switch-speed-duplex",
+    "wordCount": 952,
+    "sectionCount": 16,
+    "codeBlocks": 4,
+    "tables": 3,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "syslog",
+    "title": "CCNA: Syslog & Event Logging",
+    "category": "NET-MGMT(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "syslog",
+      "logging",
+      "monitoring",
+      "troubleshooting"
+    ],
+    "excerpt": "syslog severity levels, local buffers, remote logging, timestamps and log interpretation for network operations.",
+    "sourceUrl": "https://axelhuts.be/mac/syslog",
+    "wordCount": 1584,
+    "sectionCount": 19,
+    "codeBlocks": 14,
+    "tables": 6,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "tcp-udp",
+    "title": "CCNA: TCP & UDP Transport",
+    "category": "NET-TRANSPORT(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "tcp",
+      "udp",
+      "ports",
+      "transport-layer"
+    ],
+    "excerpt": "ports, multiplexing, tcp reliability and flow control, udp’s lightweight delivery model and common protocol examples.",
+    "sourceUrl": "https://axelhuts.be/mac/tcp-udp",
+    "wordCount": 902,
+    "sectionCount": 16,
+    "codeBlocks": 1,
+    "tables": 4,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "user-accounts",
+    "title": "Windows Server: User Accounts — Local, Built-In & Domain",
+    "category": "SYS-ACCT(8)",
+    "tags": [
+      "windows",
+      "user-accounts",
+      "active-directory",
+      "security",
+      "server-admin",
+      "sysadmin"
+    ],
+    "excerpt": "what a user account actually is, the standard-vs-administrator split, and the practical differences between local, built-in, and active directory domain accounts — including why only domain accounts travel with you across machines.",
+    "sourceUrl": "https://axelhuts.be/mac/user-accounts",
+    "wordCount": 669,
+    "sectionCount": 10,
+    "codeBlocks": 6,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "user-profiles-and-home-folders",
+    "title": "Windows Server: User Profiles & Home Folders",
+    "category": "SYS-PROFILE(8)",
+    "tags": [
+      "windows",
+      "user-profiles",
+      "roaming-profile",
+      "home-folders",
+      "active-directory",
+      "server-admin",
+      "sysadmin"
+    ],
+    "excerpt": "the four windows user profile types, how to configure roaming and mandatory profiles via unc paths, why administrators can't access profiles by default, common profile-loading failures and their fixes, and how home folders differ from redirected folders.",
+    "sourceUrl": "https://axelhuts.be/mac/user-profiles-and-home-folders",
+    "wordCount": 1500,
+    "sectionCount": 22,
+    "codeBlocks": 3,
+    "tables": 1,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  },
+  {
+    "slug": "wan-architectures",
+    "title": "CCNA: WAN Architectures",
+    "category": "NET-WAN(8)",
+    "tags": [
+      "cisco",
+      "ccna",
+      "wan",
+      "mpls",
+      "vpn",
+      "ipsec",
+      "dmvpn",
+      "remote-access"
+    ],
+    "excerpt": "leased lines, mpls vpns, internet access and homing, ipsec and tls vpns, gre over ipsec and dmvpn.",
+    "sourceUrl": "https://axelhuts.be/mac/wan-architectures",
+    "wordCount": 2089,
+    "sectionCount": 21,
+    "codeBlocks": 0,
+    "tables": 10,
+    "diagrams": 1,
+    "images": [],
+    "pdfs": [],
+    "internalLinks": [
+      "https://axelhuts.be/mac"
+    ],
+    "externalLinks": [],
+    "status": "collected",
+    "format": "HTML",
+    "origin": "imported"
+  }
+]
