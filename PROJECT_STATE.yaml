@@ -31,8 +31,9 @@ current_state:
     canonical_path: C:\Project Toby\tobypelfrene
     path_status: observed
     branch: main
-    head: fa505ddb0b02a803e9f90d2f84775af6868e6b3e
-    worktree_status: dirty with favicon integration, manuals work and pre-existing untracked evidence, audit report and portfolio-dist.tar.gz
+    head: bcfa737b1c36c158b60dc5c50194de13c71caa59
+    head_role: deployed_source_commit_before_release_record_commit
+    worktree_status: source committed; excluded local evidence, audit report and portfolio-dist.tar.gz remain untracked
     remote: https://github.com/tobypelfrene1993/tobypelfrene.git
 
   operating_mode:
@@ -47,27 +48,29 @@ current_state:
     name: Toby Pelfrene Portfolio
     type: static_react_portfolio
     lifecycle_stage: bootstrap
-    truth_summary: light_tech_2_tp_favicon_local_verified
+    truth_summary: light_tech_2_tp_favicon_production_verified
     primary_user: Toby Pelfrene and recruiters or hiring managers for Network Administration, Systems Administration, Server Administration and IT Infrastructure roles
     positioning: Network & Systems Administration Student open to junior infrastructure-focused roles; not a trader or financial influencer
 
   runtime_identity:
-    status: observed_local_preview
+    status: observed_production_https
     repo_path: C:\Project Toby\tobypelfrene
     branch: main
-    head: fa505ddb0b02a803e9f90d2f84775af6868e6b3e
-    process_or_container: Vite preview via node.exe PID 37832, serving the rebuilt local dist
-    port_or_base_url: http://127.0.0.1:4182/
+    head: bcfa737b1c36c158b60dc5c50194de13c71caa59
+    process_or_container: NGINX on Easyhost VPS cloud, serving /var/www/tobypelfrene
+    port_or_base_url: https://tobypelfrene.be/ via 136.144.222.226:443
     rebuilt_in_current_slice: true
     duplicate_runtimes_checked: true
     notes: |
-      npm.cmd run build passed TypeScript and Vite in this slice. Edge loaded
-      the five TP icon URLs from the local preview with HTTP 200 and bytes
-      matching dist; the SVG rendered visually. Home, /projects, /projects/,
-      /manuals and a detail route rendered with five icon links. All 62
-      individual manual URLs returned 200 with the same icon references.
-      The prior production build remains on the Easyhost VPS at
-      https://tobypelfrene.be/; this favicon build was not deployed.
+      npm.cmd run build passed TypeScript and Vite. Source commit bcfa737 was
+      pushed and matched origin/main. The archive SHA256 matched on the VPS;
+      dist/index.html, the deployed webroot index, and direct VPS HTTPS bytes
+      shared SHA256 f9d0e339407eb2f89ea2906e9eae2d9e7862d1c1560f1cd0ee068205e1d2c556.
+      NGINX test and reload passed. Direct HTTPS returned 200 for home,
+      /projects/, /manuals, a detail route, the CV and all five favicon files.
+      Live Edge verified all 62 manual routes, search, filtering, six projects,
+      loaded images, mobile width and the rendered TP SVG. Backup is
+      /var/www/tobypelfrene-backup-20261023-124250; no rollback was needed.
 
   environment:
     status: reported

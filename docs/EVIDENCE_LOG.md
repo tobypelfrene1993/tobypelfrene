@@ -1142,3 +1142,35 @@
   as_of: 2026-10-23
   Notes: Repo C:\Project Toby\tobypelfrene on main at fa505ddb0b02a803e9f90d2f84775af6868e6b3e; node.exe PID 37832 served the rebuilt dist on 127.0.0.1:4182. Worktree remains dirty; no commit, push or VPS deployment.
 ```
+
+## EV-2026-10-23-006: GitHub sync and TP favicon production release
+
+```yaml
+- ID: EV-2026-10-23-006
+  File:
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\deployment-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\local-runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\live-runtime-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\live-favicon-check.json
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\live-favicon-svg-edge.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\live-overview-1440.png
+    - C:\Project Toby\tobypelfrene\docs\evidence\release-2026-10-23\live-manual-375.png
+  Title: Manuals and TP favicon pushed to GitHub and deployed to production
+  Source/System: git_origin_main | local_vite_build | tar_scp_ssh | nginx | direct_vps_https | edge_browser
+  Route/Page:
+    - https://tobypelfrene.be/
+    - https://tobypelfrene.be/projects/
+    - https://tobypelfrene.be/manuals
+    - https://tobypelfrene.be/favicon.svg
+  Action: Committed reviewed source, verified the origin/main SHA, backed up the prior webroot, deployed the validated archive and checked live routes and behavior.
+  Shows:
+    - Source commit bcfa737b1c36c158b60dc5c50194de13c71caa59 matched origin/main
+    - Local and remote archive SHA256 matched; backup /var/www/tobypelfrene-backup-20261023-124250 matched previous site
+    - NGINX test and reload passed; local dist, webroot and direct HTTPS index SHA256 matched
+    - Home, /projects/, /manuals, detail, CV and all five favicon assets returned 200 from the VPS
+    - Edge verified 62 manual routes, search/filter, six projects, loaded images, mobile width and rendered TP SVG
+  Proves: The GitHub source commit produced the verified artifact served from the existing Easyhost VPS on 2026-10-23.
+  Type: github-sync-production-deployment-runtime-browser-verification
+  as_of: 2026-10-23
+  Notes: Repo C:\Project Toby\tobypelfrene on main. Owner-reported explicit public GitHub redistribution permission is recorded in docs/MANUALS_SOURCE_AUDIT.md. No rollback or unrelated service change; evidence and archive remain local and untracked.
+```
