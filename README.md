@@ -12,6 +12,8 @@ The Download CV links serve `/Toby-Pelfrene-CV.pdf`, a public version of the sup
 
 ## Tech Stack
 
+ByteAha Poster has public information, privacy and terms pages under `/byteaha-poster/`. See `docs/BYTEAHA_POSTER.md` for the content sources, static-route generation and checks required before activating the separate upload bot.
+
 - React
 - TypeScript
 - TailwindCSS

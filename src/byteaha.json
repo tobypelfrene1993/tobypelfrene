@@ -1,0 +1,53 @@
+[
+  {
+    "path": "/byteaha-poster/",
+    "title": "ByteAha Poster",
+    "subtitle": "Persoonlijke automatisering voor YouTube Shorts",
+    "sections": [
+      {"title": "Over ByteAha Poster", "paragraphs": ["ByteAha Poster is een privétoepassing van Toby Pelfrene, ontwikkeld voor het beheren en automatisch publiceren van videocontent op het YouTube-kanaal ByteAha (@ByteAha). ByteAha richt zich op technologie, digitale innovaties, interessante techfeiten en verrassende weetjes.", "De toepassing is bedoeld om zelfgemaakte verticale video's efficiënt naar YouTube te uploaden. De onderstaande botfuncties zijn gepland; deze website biedt informatie en voert zelf geen uploads of Google-aanmelding uit."]},
+      {"title": "Geplande functionaliteiten", "items": ["Automatisch uploaden van eigen YouTube Shorts.", "Uploaden van videotitels en beschrijvingen.", "Beheren van noodzakelijke uploadmetadata.", "Verbinding met de YouTube Data API v3 via videos.insert.", "Autorisatie via Google OAuth 2.0.", "Uitsluitend gebruik voor het eigen, geautoriseerde YouTube-kanaal."]},
+      {"title": "Persoonlijke toegang", "paragraphs": ["ByteAha Poster is uitsluitend bedoeld voor het eigen Google-account van Toby Pelfrene. Er zijn geen externe gebruikers, openbare registratie of commerciële diensten aan derden."]},
+      {"title": "Google OAuth en machtiging", "paragraphs": ["De toepassing is bedoeld om uitsluitend de scope https://www.googleapis.com/auth/youtube.upload aan te vragen. Deze machtiging wordt gebruikt om video's te uploaden naar het kanaal dat door de eigenaar is geautoriseerd. De eigenaar bepaalt welke video's, titels, beschrijvingen en publicatie-instellingen worden gebruikt.", "Google Cloud-project: ByteAha Poster (project-ID: byteaha-poster). ByteAha Poster is een zelfstandig project en is niet door Google of YouTube ontwikkeld of goedgekeurd."]}
+    ]
+  },
+  {
+    "path": "/byteaha-poster/privacy/",
+    "title": "Privacyverklaring – ByteAha Poster",
+    "subtitle": "Laatste update: 5 november 2026",
+    "sections": [
+      {"title": "Verantwoordelijke en toepassingsgebied", "paragraphs": ["Toby Pelfrene is eigenaar en verantwoordelijke voor ByteAha Poster. Deze verklaring beschrijft het beoogde gebruik van Google- en YouTube-gegevens door zijn persoonlijke uploadbot. De bot is niet voor externe gebruikers beschikbaar. De definitieve botimplementatie is op deze website niet aangetoond; geplande verwerking wordt hieronder als zodanig beschreven."]},
+      {"title": "Doel en Google OAuth", "paragraphs": ["Het doel is eigen videocontent automatisch op het eigen YouTube-kanaal ByteAha te publiceren via de YouTube Data API v3. De geplande bot gebruikt Google OAuth 2.0 voor toestemming, met uitsluitend de machtiging https://www.googleapis.com/auth/youtube.upload. De toepassing vraagt geen Google-wachtwoord en biedt geen Google-aanmeldformulier op deze website."]},
+      {"title": "Welke gegevens nodig zijn", "items": ["Kanaalgegevens die bij de geautoriseerde upload beschikbaar komen, zoals kanaalidentificatie; er wordt geen aanvullende leesscope aangevraagd.", "De door de eigenaar geselecteerde videobestanden.", "Titels, beschrijvingen en noodzakelijke uploadmetadata, waaronder gekozen publicatie-instellingen.", "OAuth-toegangstokens en, indien Google die verstrekt, refreshtokens voor toegestane vervolguploads."]},
+      {"title": "Opslag en beveiliging", "paragraphs": ["De beoogde implementatie bewaart OAuth-tokens op de eigen computer of server van de eigenaar, buiten de publieke website en de openbare repository. Tokens moeten tegen onbevoegde toegang worden beschermd; geheimen mogen niet in openbare bestanden of logs terechtkomen. De concrete opslaglocatie, toegangsbeperking, versleuteling en eventuele back-ups moeten vóór ingebruikname worden gecontroleerd. Er wordt hier niet beweerd dat deze beveiligingsmaatregelen al in de bot zijn geïmplementeerd."]},
+      {"title": "Gebruik en gegevensdeling", "paragraphs": ["De geplande verwerking beperkt zich tot de hierboven beschreven uploadfunctie. De noodzakelijke video- en metadatagegevens worden via de API aan Google/YouTube doorgegeven. De gekozen publicatie-instellingen bepalen wie de video op YouTube kan bekijken. Google verwerkt die gegevens volgens het Google Privacybeleid.", "Google-gebruikersgegevens worden niet verkocht, niet gebruikt voor advertentieprofilering of training van algemene AI-modellen en niet onnodig aan derden doorgegeven. Het gebruik en de overdracht van informatie uit Google API's moeten voldoen aan de Google API Services User Data Policy, inclusief de Limited Use-vereisten."]},
+      {"title": "Toestemming intrekken", "paragraphs": ["De eigenaar kan de verbinding op elk moment intrekken via de Google-accountmachtigingen of Google-beveiligingsinstellingen, bereikbaar via de links onderaan deze pagina. Daarna moet de bot worden gestopt en mag hij de ingetrokken autorisatie niet meer gebruiken. Opnieuw verbinden vereist nieuwe toestemming."]},
+      {"title": "Gegevens verwijderen en bewaartermijnen", "paragraphs": ["Om de geplande lokale OAuth-opslag te verwijderen, stopt de eigenaar de bot, trekt hij de toestemming bij Google in en verwijdert hij de lokale tokenbestanden of opgeslagen OAuth-records, inclusief eventuele kopieën in back-ups en logs. De exacte bestanden en verwijderprocedure moeten bij de definitieve implementatie worden vastgelegd.", "Er is geen geverifieerde bewaartermijn voor de bot beschikbaar. Daarom wordt geen bestaande termijn verzonnen. Vóór ingebruikname moet de eigenaar vastleggen welke gegevens werkelijk worden bewaard, waarvoor en hoe lang, en verwijdering bij intrekking of zodra gegevens niet meer nodig zijn implementeren volgens de toepasselijke Google- en YouTube-regels. Deze verklaring moet dan met de werkelijke verwerking worden bijgewerkt.", "Lokale verwijdering of intrekking verwijdert geen reeds gepubliceerde video van YouTube. Die kan de eigenaar afzonderlijk beheren of verwijderen in YouTube Studio."]},
+      {"title": "Deze website", "paragraphs": ["Deze informatiepagina's vragen geen Google-autorisatie en ontvangen geen OAuth-tokens. In de onderzochte websitebron zijn geen analytics-, trackingcookie- of cookiebannermodules aangetroffen; deze pagina's voegen die ook niet toe. Bij websitebezoek ontvangt de hostingserver technische verzoekgegevens, zoals een IP-adres en opgevraagde URL. De serverloginstellingen en bewaartermijnen zijn voor deze verklaring niet geverifieerd. Externe links openen websites met een eigen privacybeleid."]},
+      {"title": "Contact en wijzigingen", "paragraphs": ["Vragen over deze verklaring of de verwerking kunnen via de bestaande contactmogelijkheid op tobypelfrene.be aan Toby Pelfrene worden gericht. Bij wijzigingen aan de bot of gegevensverwerking wordt deze verklaring bijgewerkt."]}
+    ],
+    "links": [
+      {"label": "Google-accountmachtigingen", "href": "https://myaccount.google.com/permissions"},
+      {"label": "Google-beveiligingsinstellingen", "href": "https://security.google.com/settings/security/permissions"},
+      {"label": "Google Privacybeleid", "href": "https://policies.google.com/privacy"},
+      {"label": "Google API Services User Data Policy", "href": "https://developers.google.com/terms/api-services-user-data-policy"}
+    ]
+  },
+  {
+    "path": "/byteaha-poster/terms/",
+    "title": "Gebruiksvoorwaarden – ByteAha Poster",
+    "subtitle": "Laatste update: 5 november 2026",
+    "sections": [
+      {"title": "Persoonlijke toepassing", "paragraphs": ["ByteAha Poster is een persoonlijke toepassing van Toby Pelfrene, uitsluitend bestemd voor zijn eigen YouTube-kanaal ByteAha (@ByteAha). Er is geen openbare gebruikersregistratie en er wordt geen dienstverlening aan externe gebruikers aangeboden."]},
+      {"title": "Beoogd gebruik", "paragraphs": ["De geplande bot gebruikt de YouTube Data API v3 en Google OAuth 2.0 om eigen video's met bijbehorende titels, beschrijvingen en uploadmetadata te publiceren. Deze informatiepagina's bieden zelf geen uploadfunctie. Beschikbaarheid van de bot en voltooiing van Google-controles worden hiermee niet toegezegd."]},
+      {"title": "Verantwoordelijkheid voor content", "paragraphs": ["De eigenaar blijft verantwoordelijk voor de video's, beschrijvingen, publicatie-instellingen en auteursrechten. Alleen content waarvoor hij de noodzakelijke rechten en toestemmingen heeft, mag worden gepubliceerd. De eigenaar moet controle houden over de inhoud en publicatie, ook bij geautomatiseerde uploads."]},
+      {"title": "Google- en YouTube-voorwaarden", "paragraphs": ["Door ByteAha Poster te gebruiken, gaat de eigenaar akkoord met de YouTube Terms of Service. Het gebruik moet tevens voldoen aan de toepasselijke voorwaarden en regels van Google, de YouTube API Services Terms of Service en de YouTube API Services Developer Policies. De relevante documenten zijn hieronder gelinkt."]},
+      {"title": "Privacy en toegang", "paragraphs": ["Vóór gebruik moet de eigenaar de privacyverklaring lezen en aanvaarden. Daarin staan de geplande gegevensverwerking, het intrekken van toegang en het verwijderen van lokale OAuth-gegevens beschreven. De toepassing mag uitsluitend worden gebruikt met het eigen geautoriseerde account."]},
+      {"title": "Contact", "paragraphs": ["Voor vragen over ByteAha Poster of deze voorwaarden is Toby Pelfrene bereikbaar via de bestaande contactmogelijkheid op tobypelfrene.be."]}
+    ],
+    "links": [
+      {"label": "YouTube Terms of Service", "href": "https://www.youtube.com/t/terms"},
+      {"label": "YouTube API Services Terms of Service", "href": "https://developers.google.com/youtube/terms/api-services-terms-of-service/"},
+      {"label": "YouTube API Services Developer Policies", "href": "https://developers.google.com/youtube/terms/developer-policies"}
+    ]
+  }
+]

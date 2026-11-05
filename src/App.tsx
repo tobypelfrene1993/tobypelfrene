@@ -1,4 +1,5 @@
 import { contact, featuredProjects, projects, skillGroups, visibleProjects } from './portfolioData';
+import { ByteAhaPage } from './ByteAhaPage';
 import { ManualPage, ManualsOverview } from './manuals/Manuals';
 
 type Project = (typeof projects)[number];
@@ -124,6 +125,7 @@ function ProjectsPage() {
 
 export default function App() {
   const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  if (['/byteaha-poster', '/byteaha-poster/privacy', '/byteaha-poster/terms'].includes(currentPath)) return <><Header isHome={false} /><ByteAhaPage path={currentPath} /><Footer /></>;
   if (currentPath === '/projects') return <ProjectsPage />;
   if (currentPath === '/manuals') return <><Header isHome={false} currentPage="manuals" /><ManualsOverview /><Footer /></>;
   if (currentPath.startsWith('/manuals/')) return <><Header isHome={false} currentPage="manuals" /><ManualPage slug={currentPath.slice('/manuals/'.length)} /><Footer /></>;
