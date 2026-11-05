@@ -1174,3 +1174,13 @@
   as_of: 2026-10-23
   Notes: Repo C:\Project Toby\tobypelfrene on main. Owner-reported explicit public GitHub redistribution permission is recorded in docs/MANUALS_SOURCE_AUDIT.md. No rollback or unrelated service change; evidence and archive remain local and untracked.
 ```
+
+## EV-2026-11-05-001: ByteAha Poster production pages
+
+- Runtime: NGINX on cloud, /var/www/tobypelfrene at https://tobypelfrene.be, rebuilt in this slice.
+- Source: a38915efac61f119ab44d52bea6f0a74ba899f6f on main in C:\Project Toby\tobypelfrene; verified origin/main after push.
+- Evidence: C:\Project Toby\tobypelfrene\docs\evidence\byteaha-2026-11-05\live-check.json and local-check.json; desktop/tablet/mobile screenshots in the same folder.
+- All three ByteAha routes returned 200, correct metadata and static content, no browser errors/overflow; refresh and mutual links passed. Existing site regressions passed including 62 manual URLs.
+- Local dist, deployed information-page HTML and direct VPS HTTPS SHA256: 2065004715d487cfee0ed8ce7a054724c341d074f7ed595e80c66f0ef68f7c1e.
+- Backup: /var/www/tobypelfrene-backup-20261105-161908, verified against prior webroot. NGINX test and reload passed; no rollback.
+- Bot activation and Google Console approval are not proven by website publication; storage/deletion/retention checks remain with the owner.

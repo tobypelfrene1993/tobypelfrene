@@ -437,3 +437,11 @@ Use this file for dated session notes, verification summaries, and references to
 - Built `portfolio-dist.tar.gz` (1,371,930 bytes, SHA256 `c095876fd80b9b833decdce0ae07af33bc814e5fad556cf95eaebc2a732f208f`), uploaded via SCP, and matched the remote hash. Verified VPS `cloud`, exact webroot, archive paths, free disk space, active NGINX and existing site. Backed up the complete webroot to `/var/www/tobypelfrene-backup-20261023-124250` and verified `diff -qr` against the previous 72 files.
 - An initial deploy script stopped in its archive precheck due to a `pipefail`/`grep` interaction, before touching the webroot. The corrected script deployed only to `/var/www/tobypelfrene`; `nginx -t` and reload passed. Local dist, webroot and direct HTTPS index hashes matched. Direct HTTPS returned 200 for home, `/projects/`, `/manuals`, a manual detail page, CV and all five favicon assets.
 - Live Edge checked all 62 manual routes, search/filter, six project cards, three loaded images, mobile width, favicon links and the rendered TP SVG. No rollback or unrelated service change was needed. Evidence: `EV-2026-10-23-006`. Excluded local evidence and the deployment archive remain untracked.
+
+## 2026-11-05 - ByteAha Poster public OAuth information pages
+
+- Added three Dutch public pages using the existing header/footer and scoped styling. Shared JSON supplies React and crawlable static HTML, with per-route language, titles and canonical URLs. Main navigation is unchanged.
+- Reviewed official Google OAuth/User Data and YouTube API policies. Described bot functionality, token storage and retention as planned/unverified; documented owner checks before activation. No secrets or OAuth client were added.
+- Build and local/live Edge verification passed at 1440/768/375px; no JS errors or overflow. Home, projects, 62 manual URLs, search/filter, CV and favicon passed regressions.
+- Source commit a38915efac61f119ab44d52bea6f0a74ba899f6f was pushed and matched origin/main. Archive SHA256 ef16e092ff94c273170aa39cba48ad94c5011fe9844f6d7f1185b338ab5b0ebd matched after SCP. Verified backup: /var/www/tobypelfrene-backup-20261105-161908. NGINX test/reload passed; direct HTTPS and local/deployed HTML hashes matched. No rollback or unrelated service changes.
+- Evidence remains local at docs/evidence/byteaha-2026-11-05/. Existing untracked artifacts were preserved.

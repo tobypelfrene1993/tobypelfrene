@@ -1,7 +1,7 @@
 # PROJECT_STATE.yaml - Structured current truth
 
 metadata:
-  updated_at: 2026-10-23
+  updated_at: 2026-11-05
   updated_by: agent
   version: "statedd-template-v3"
 
@@ -31,7 +31,7 @@ current_state:
     canonical_path: C:\Project Toby\tobypelfrene
     path_status: observed
     branch: main
-    head: bcfa737b1c36c158b60dc5c50194de13c71caa59
+    head: a38915efac61f119ab44d52bea6f0a74ba899f6f
     head_role: deployed_source_commit_before_release_record_commit
     worktree_status: source committed; excluded local evidence, audit report and portfolio-dist.tar.gz remain untracked
     remote: https://github.com/tobypelfrene1993/tobypelfrene.git
@@ -48,7 +48,7 @@ current_state:
     name: Toby Pelfrene Portfolio
     type: static_react_portfolio
     lifecycle_stage: bootstrap
-    truth_summary: light_tech_2_tp_favicon_production_verified
+    truth_summary: byteaha_information_pages_production_verified
     primary_user: Toby Pelfrene and recruiters or hiring managers for Network Administration, Systems Administration, Server Administration and IT Infrastructure roles
     positioning: Network & Systems Administration Student open to junior infrastructure-focused roles; not a trader or financial influencer
 
@@ -56,21 +56,21 @@ current_state:
     status: observed_production_https
     repo_path: C:\Project Toby\tobypelfrene
     branch: main
-    head: bcfa737b1c36c158b60dc5c50194de13c71caa59
+    head: a38915efac61f119ab44d52bea6f0a74ba899f6f
     process_or_container: NGINX on Easyhost VPS cloud, serving /var/www/tobypelfrene
     port_or_base_url: https://tobypelfrene.be/ via 136.144.222.226:443
     rebuilt_in_current_slice: true
     duplicate_runtimes_checked: true
     notes: |
-      npm.cmd run build passed TypeScript and Vite. Source commit bcfa737 was
-      pushed and matched origin/main. The archive SHA256 matched on the VPS;
-      dist/index.html, the deployed webroot index, and direct VPS HTTPS bytes
-      shared SHA256 f9d0e339407eb2f89ea2906e9eae2d9e7862d1c1560f1cd0ee068205e1d2c556.
-      NGINX test and reload passed. Direct HTTPS returned 200 for home,
-      /projects/, /manuals, a detail route, the CV and all five favicon files.
-      Live Edge verified all 62 manual routes, search, filtering, six projects,
-      loaded images, mobile width and the rendered TP SVG. Backup is
-      /var/www/tobypelfrene-backup-20261023-124250; no rollback was needed.
+      ByteAha Poster information, privacy and terms pages were rebuilt and
+      deployed on 2026-11-05. All three returned 200 directly from the VPS.
+      Live Edge checks passed at 1440, 768 and 375px, including reload,
+      mutual links, metadata, no overflow and no JavaScript errors. Regression
+      checks covered home, six projects, manuals search/filter, 62 manual
+      URLs, CV and favicon. Local HTML, webroot and direct HTTPS hashes matched.
+      Backup: /var/www/tobypelfrene-backup-20261105-161908. No rollback needed.
+      Bot implementation is outside this repo; storage/deletion/retention
+      must be confirmed before use. Source commit is recorded above.
 
   environment:
     status: reported
